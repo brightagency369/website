@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bright Ads & Marketing</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+:root{--bg:#ffffff;--ink:#1c1a3a;--muted:#5b5877;--surface:#f4f2ff;--yellow:#ffc93c;--coral:#ff5c7a;--mint:#2ec4b6;--violet:#8b6cff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15132b;--ink:#f3f1ff;--muted:#b0acd0;--surface:#201d40}}
+:root[data-theme="dark"]{--bg:#15132b;--ink:#f3f1ff;--muted:#b0acd0;--surface:#201d40}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;position:relative;z-index:2}
+.logo{font-weight:800;font-size:20px;display:flex;align-items:center}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--yellow);box-shadow:8px 0 0 var(--coral),16px 0 0 var(--mint);margin-right:26px;animation:blink 3s infinite}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--ink);color:var(--ink);transition:transform .2s}
+.btn:active,.btn:hover{transform:scale(1.06)}
+.btn.main{background:var(--yellow);color:#1c1a3a;border-color:var(--yellow)}
+a:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.hero-wrap{position:relative;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:drift 12s ease-in-out infinite alternate}
+.b1{width:260px;height:260px;background:var(--yellow);top:-40px;left:-60px}
+.b2{width:300px;height:300px;background:var(--coral);top:120px;right:-100px;animation-delay:-4s}
+.b3{width:240px;height:240px;background:var(--mint);bottom:-60px;left:30%;animation-delay:-8s}
+.hero{position:relative;display:grid;gap:30px;padding:30px 0 60px;align-items:center}
+.hero h1{font-size:clamp(40px,10vw,70px);font-weight:800;letter-spacing:-.02em}
+.hl{background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/0 .32em no-repeat;animation:ul 1.2s .5s forwards;color:var(--ink)}
+.hero p{color:var(--muted);margin:18px 0 26px;max-width:46ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stack{position:relative;height:480px;max-width:360px;margin:0 auto;width:100%}
+.ad{position:absolute;width:54%;aspect-ratio:9/16;border-radius:22px;padding:14px;display:flex;flex-direction:column;gap:8px;font:800 17px/1.15 "Bricolage Grotesque",system-ui,sans-serif;color:#1c1a3a;transform:rotate(var(--r));animation:float 5s ease-in-out infinite}
+.ad.a{background:var(--yellow);left:0;top:40px;--r:-6deg}
+.ad.b{background:var(--coral);right:0;top:0;--r:6deg;animation-delay:-1.7s}
+.ad.c{background:var(--mint);left:23%;top:120px;--r:-1deg;z-index:2;box-shadow:0 14px 34px rgba(28,26,58,.3);animation-delay:-3.2s}
+.chip{align-self:flex-start;background:#1c1a3a;color:#fff;font:700 11px "DM Sans",sans-serif;padding:4px 10px;border-radius:99px}
+.play{margin-top:auto;width:44px;height:44px;border-radius:50%;background:#1c1a3a;display:grid;place-items:center;animation:pulse 2s infinite}
+.play::after{content:"";border-left:14px solid #ffc93c;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.fake-btn{margin-top:auto;align-self:flex-start;background:#1c1a3a;color:#fff;font:700 13px "DM Sans",sans-serif;padding:8px 14px;border-radius:99px;animation:pulse 2s infinite}
+.bub{font:500 13px/1.3 "DM Sans",sans-serif;padding:8px 11px;border-radius:14px;max-width:90%}
+.bub.u{background:#fff;align-self:flex-start;border-bottom-left-radius:4px}
+.bub.s{background:#1c1a3a;color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.typing{display:flex;gap:4px;padding:8px 11px;background:#fff;border-radius:14px;align-self:flex-start;border-bottom-left-radius:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:#1c1a3a;animation:bounce 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.mq{overflow:hidden;background:var(--ink);color:var(--bg);transform:rotate(-1.5deg);margin:6px -12px;padding:14px 0;font:800 20px "Bricolage Grotesque",sans-serif;white-space:nowrap}
+.mq div{display:flex;width:max-content;animation:mq 24s linear infinite}
+.mq span{padding-right:28px}
+section{padding:56px 0}
+h2{font-size:clamp(30px,7vw,46px);font-weight:800;margin-bottom:10px}
+.sub{color:var(--muted);max-width:52ch;margin-bottom:28px}
+.grid{display:grid;gap:16px}
+.svc{border-radius:24px;padding:24px;color:#1c1a3a;transition:transform .25s}
+.svc:hover,.svc:active{transform:translateY(-6px) rotate(-1deg)}
+.svc:nth-child(1){background:var(--yellow)}.svc:nth-child(2){background:var(--coral)}.svc:nth-child(3){background:var(--mint)}
+.svc:nth-child(4){background:var(--violet)}.svc:nth-child(5){background:#ffb085}
+.ico{width:54px;height:54px;border-radius:16px;background:rgba(255,255,255,.55);display:grid;place-items:center;font-size:28px;margin-bottom:14px;animation:wiggle 4s infinite}
+.svc h3{font-size:23px;margin-bottom:6px}
+.svc p{font-size:16px;opacity:.85}
+.steps{display:grid;gap:22px}
+.step{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start}
+.num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font:800 20px "Bricolage Grotesque",sans-serif;color:#1c1a3a}
+.step:nth-child(1) .num{background:var(--yellow)}.step:nth-child(2) .num{background:var(--coral)}.step:nth-child(3) .num{background:var(--mint)}.step:nth-child(4) .num{background:var(--violet)}
+.step h3{font-size:21px}.step p{color:var(--muted);font-size:16px}
+.contact{background:linear-gradient(120deg,#1c1a3a,#4b2a8f,#d94a8c,#1c1a3a);background-size:300% 300%;animation:grad 10s ease infinite;color:#fff;border-radius:28px;padding:44px 24px;text-align:center;margin:20px 0 40px}
+.contact p{opacity:.9;margin:0 auto 24px;max-width:44ch}
+.contact .cta{justify-content:center}
+.contact .btn{border-color:#fff;color:#fff}.contact .btn.main{color:#1c1a3a;border-color:var(--yellow)}
+.mail{margin-top:18px!important;font-size:15px}
+footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
+.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulse 2.4s infinite}
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.js .rv.in{opacity:1;transform:none}
+@keyframes float{50%{transform:rotate(var(--r)) translateY(-14px)}}
+@keyframes drift{to{transform:translate(40px,30px) scale(1.15)}}
+@keyframes ul{to{background-size:100% .32em}}
+@keyframes pulse{50%{transform:scale(1.08)}}
+@keyframes bounce{40%{transform:translateY(-5px)}}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes wiggle{0%,90%,100%{transform:rotate(0)}93%{transform:rotate(-12deg)}96%{transform:rotate(12deg)}}
+@keyframes grad{50%{background-position:100% 50%}}
+@keyframes blink{50%{opacity:.4}}
+@media(min-width:760px){.hero{grid-template-columns:1.1fr .9fr}.grid{grid-template-columns:repeat(6,1fr)}.svc{grid-column:span 2}.svc:nth-child(4){grid-column:2/span 2}.svc:nth-child(5){grid-column:span 2}.steps{grid-template-columns:repeat(4,1fr)}.step{grid-template-columns:1fr}.contact{padding:64px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hl{background-size:100% .32em}.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="hero-wrap">
+<span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+<div class="wrap">
+<header>
+  <div class="logo"><span class="dot"></span>Bright Ads &amp; Marketing</div>
+</header>
+<div class="hero">
+  <div>
+    <h1>Ads that get <span class="hl">noticed.</span> Growth you can see.</h1>
+    <p>We create UGC videos and banner ads, run them across social media, and build chat agents that talk to your customers for you.</p>
+    <div class="cta">
+      <a class="btn main js-wa" href="#contact">Chat on WhatsApp</a>
+      <a class="btn" href="#services">See services</a>
+    </div>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <div class="ad a"><span class="chip">UGC ads</span>Videos people watch till the end<span class="play"></span></div>
+    <div class="ad b"><span class="chip">Banner ads</span>Banners that get clicks<span class="fake-btn">Shop now</span></div>
+    <div class="ad c"><span class="chip">Chat agents</span>Replies to customers 24/7<div class="bub u">Hi, what are your prices?</div><div class="bub s">Hi! Tell us what you need and we’ll help.</div><div class="typing"><i></i><i></i><i></i></div></div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="mq" aria-hidden="true"><div>
+<span>UGC ADS ✦ BANNER ADS ✦ SOCIAL MEDIA CAMPAIGNS ✦ CHAT AGENTS ✦ BUSINESS GROWTH ✦</span>
+<span>UGC ADS ✦ BANNER ADS ✦ SOCIAL MEDIA CAMPAIGNS ✦ CHAT AGENTS ✦ BUSINESS GROWTH ✦</span>
+</div></div>
+
+<div class="wrap">
+<section id="services">
+  <h2 class="rv">What we do</h2>
+  <p class="sub rv">Everything your business needs to get found, get clicks and get customers.</p>
+  <div class="grid">
+    <div class="svc rv"><div class="ico">🎬</div><h3>UGC ads</h3><p>Creator-style videos that feel like a friend’s recommendation and stop the scroll.</p></div>
+    <div class="svc rv" style="transition-delay:.1s"><div class="ico">🖼️</div><h3>Banner ads</h3><p>Clear, on-brand banners sized for Instagram, Facebook, YouTube and Google.</p></div>
+    <div class="svc rv" style="transition-delay:.2s"><div class="ico">📣</div><h3>Social media ad campaigns</h3><p>We set up and run your ads on every major platform, then improve them based on results.</p></div>
+    <div class="svc rv"><div class="ico">💬</div><h3>Chat agents</h3><p>Chatbots for WhatsApp, Instagram and your website that answer customers and collect leads all day.</p></div>
+    <div class="svc rv" style="transition-delay:.1s"><div class="ico">📈</div><h3>Business growth help</h3><p>Offer, pricing, funnel and content guidance so your ads bring sales, not just views.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="rv">How we work</h2>
+  <p class="sub rv">Simple, in four steps.</p>
+  <div class="steps">
+    <div class="step rv"><div class="num">1</div><div><h3>Talk</h3><p>Tell us about your business and your goal.</p></div></div>
+    <div class="step rv" style="transition-delay:.1s"><div class="num">2</div><div><h3>Plan</h3><p>We pick the right ads and platforms.</p></div></div>
+    <div class="step rv" style="transition-delay:.2s"><div class="num">3</div><div><h3>Launch</h3><p>We create the ads and go live.</p></div></div>
+    <div class="step rv" style="transition-delay:.3s"><div class="num">4</div><div><h3>Improve</h3><p>We track results and keep improving.</p></div></div>
+  </div>
+</section>
+
+<div class="contact rv" id="contact">
+  <h2>Let’s grow your business</h2>
+  <p>Message us about what you sell and what you want to achieve. We’ll reply with a clear plan.</p>
+  <div class="cta">
+    <a class="btn main js-wa" href="#contact">WhatsApp us</a>
+    <a class="btn js-mail" href="#contact">Email</a>
+  </div>
+  <p class="mail">Email: brightagency369@gmail.com</p>
+</div>
+<footer>© 2026 Bright Ads &amp; Marketing</footer>
+</div>
+<a class="wa js-wa" href="#contact">WhatsApp</a>
+<script>
+var WHATSAPP="https://wa.me/message/YA7BCDI3QYUOO1", EMAIL="brightagency369@gmail.com";
+document.querySelectorAll(".js-wa").forEach(function(a){a.href=WHATSAPP});
+var m=document.querySelector(".js-mail");m.href="https://mail.google.com/mail/?view=cm&to="+EMAIL;m.target="_blank";m.rel="noopener";
+var els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add("in")})}
+</script>
+</body>
+</html>
