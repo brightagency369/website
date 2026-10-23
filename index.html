@@ -76,6 +76,33 @@ footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
 .wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulse 2.4s infinite}
 .js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
 .js .rv.in{opacity:1;transform:none}
+.svc{cursor:pointer}
+.more{display:inline-block;margin-top:14px;font-weight:700;font-size:15px;background:rgba(255,255,255,.55);padding:6px 14px;border-radius:99px;animation:nudge 2.2s ease-in-out infinite}
+.ov{position:fixed;inset:0;background:rgba(10,8,30,.62);backdrop-filter:blur(4px);z-index:10;display:none;align-items:flex-end;justify-content:center}
+.ov.open{display:flex;animation:fade .25s}
+.sheet{background:var(--bg);color:var(--ink);width:100%;max-width:560px;max-height:90vh;overflow:auto;border-radius:28px 28px 0 0;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px));animation:up .4s cubic-bezier(.2,.9,.3,1)}
+.sh-top{padding:26px 22px 20px;color:#1c1a3a;position:relative}
+.sh-top .ico{margin-bottom:10px;animation:none}
+.sh-top h3{font-size:30px}
+.x{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.65);font-size:22px;line-height:1;color:#1c1a3a;cursor:pointer}
+.sh-body{padding:6px 22px 0}
+.sh-body>p{color:var(--muted);margin-top:14px}
+.sh-body h4{font:800 17px "Bricolage Grotesque",sans-serif;margin:18px 0 10px}
+.sh-body ul{padding:0}
+.sh-body li{list-style:none;padding-left:30px;position:relative;margin-bottom:9px;opacity:0;animation:li .45s forwards}
+.sh-body li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--mint);color:#1c1a3a;font-size:13px;font-weight:800;display:grid;place-items:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:var(--surface);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:500}
+.acts{display:grid;gap:12px;padding:22px 22px 0}
+.act{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;color:#fff;animation:pulse 2.4s infinite}
+.act.w{background:#25d366}.act.g{background:#ea4335;animation-delay:-1.2s}
+.act::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 2.6s infinite}
+@media(min-width:760px){.ov{align-items:center}.sheet{border-radius:28px}}
+@keyframes up{from{transform:translateY(60px);opacity:0}}
+@keyframes fade{from{opacity:0}}
+@keyframes li{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@keyframes shine{to{left:130%}}
+@keyframes nudge{50%{transform:translateX(6px)}}
 @keyframes float{50%{transform:rotate(var(--r)) translateY(-14px)}}
 @keyframes drift{to{transform:translate(40px,30px) scale(1.15)}}
 @keyframes ul{to{background-size:100% .32em}}
@@ -86,7 +113,7 @@ footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
 @keyframes grad{50%{background-position:100% 50%}}
 @keyframes blink{50%{opacity:.4}}
 @media(min-width:760px){.hero{grid-template-columns:1.1fr .9fr}.grid{grid-template-columns:repeat(6,1fr)}.svc{grid-column:span 2}.svc:nth-child(4){grid-column:2/span 2}.svc:nth-child(5){grid-column:span 2}.steps{grid-template-columns:repeat(4,1fr)}.step{grid-template-columns:1fr}.contact{padding:64px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hl{background-size:100% .32em}.js .rv{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hl{background-size:100% .32em}.js .rv{opacity:1;transform:none}.sh-body li{opacity:1}}
 </style>
 </head>
 <body>
@@ -124,11 +151,11 @@ footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
   <h2 class="rv">What we do</h2>
   <p class="sub rv">Everything your business needs to get found, get clicks and get customers.</p>
   <div class="grid">
-    <div class="svc rv"><div class="ico">🎬</div><h3>UGC ads</h3><p>Creator-style videos that feel like a friend’s recommendation and stop the scroll.</p></div>
-    <div class="svc rv" style="transition-delay:.1s"><div class="ico">🖼️</div><h3>Banner ads</h3><p>Clear, on-brand banners sized for Instagram, Facebook, YouTube and Google.</p></div>
-    <div class="svc rv" style="transition-delay:.2s"><div class="ico">📣</div><h3>Social media ad campaigns</h3><p>We set up and run your ads on every major platform, then improve them based on results.</p></div>
-    <div class="svc rv"><div class="ico">💬</div><h3>Chat agents</h3><p>Chatbots for WhatsApp, Instagram and your website that answer customers and collect leads all day.</p></div>
-    <div class="svc rv" style="transition-delay:.1s"><div class="ico">📈</div><h3>Business growth help</h3><p>Offer, pricing, funnel and content guidance so your ads bring sales, not just views.</p></div>
+    <div class="svc rv" data-k="ugc" tabindex="0" role="button"><div class="ico">🎬</div><h3>UGC ads</h3><p>Creator-style videos that feel like a friend’s recommendation and stop the scroll.</p><span class="more">Tap for details →</span></div>
+    <div class="svc rv" style="transition-delay:.1s" data-k="banner" tabindex="0" role="button"><div class="ico">🖼️</div><h3>Banner ads</h3><p>Clear, on-brand banners sized for Instagram, Facebook, YouTube and Google.</p><span class="more">Tap for details →</span></div>
+    <div class="svc rv" style="transition-delay:.2s" data-k="social" tabindex="0" role="button"><div class="ico">📣</div><h3>Social media ad campaigns</h3><p>We set up and run your ads on every major platform, then improve them based on results.</p><span class="more">Tap for details →</span></div>
+    <div class="svc rv" data-k="chat" tabindex="0" role="button"><div class="ico">💬</div><h3>Chat agents</h3><p>Chatbots for WhatsApp, Instagram and your website that answer customers and collect leads all day.</p><span class="more">Tap for details →</span></div>
+    <div class="svc rv" style="transition-delay:.1s" data-k="growth" tabindex="0" role="button"><div class="ico">📈</div><h3>Business growth help</h3><p>Offer, pricing, funnel and content guidance so your ads bring sales, not just views.</p><span class="more">Tap for details →</span></div>
   </div>
 </section>
 
@@ -155,12 +182,48 @@ footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
 <footer>© 2026 Bright Ads &amp; Marketing</footer>
 </div>
 <a class="wa js-wa" href="#contact">WhatsApp</a>
+<div class="ov" id="ov" aria-hidden="true"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t">
+<div class="sh-top" id="sh-top"><button class="x" id="sh-x" aria-label="Close">×</button><div class="ico" id="sh-i"></div><h3 id="sh-t"></h3></div>
+<div class="sh-body"><p id="sh-d"></p><h4>What you get</h4><ul id="sh-g"></ul><h4>Great for</h4><div class="tags" id="sh-f"></div></div>
+<div class="acts"><a class="act w js-wa" id="sh-w" href="#contact">💬 Chat on WhatsApp</a><a class="act g" id="sh-m" target="_blank" rel="noopener" href="#contact">✉️ Email us</a></div>
+</div></div>
 <script>
 var WHATSAPP="https://wa.me/message/YA7BCDI3QYUOO1", EMAIL="brightagency369@gmail.com";
 document.querySelectorAll(".js-wa").forEach(function(a){a.href=WHATSAPP});
 var m=document.querySelector(".js-mail");m.href="https://mail.google.com/mail/?view=cm&to="+EMAIL;m.target="_blank";m.rel="noopener";
 var els=document.querySelectorAll(".rv");
 if("IntersectionObserver" in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add("in")})}
+var D={
+ugc:{t:"UGC ads",d:"Short, creator-style videos that look like real people talking about your product, so viewers trust them and keep watching.",g:["Script and hook ideas built for your product","Vertical videos made for Reels, Shorts and Stories","Captions, music and clean editing included","Multiple versions so we can test what works best"],f:["Product brands","Local businesses","Apps and services"]},
+banner:{t:"Banner ads",d:"Eye-catching static and animated banners designed to match your brand and win the click.",g:["Sizes for feed, stories and display ads","Strong headline, offer and call to action","Several variations for A/B testing","Ready-to-upload files"],f:["Sales and offers","Festival campaigns","Lead generation"]},
+social:{t:"Social media ad campaigns",d:"We plan, launch and manage your ads on all major social platforms so your budget goes where it works.",g:["Campaign setup and audience targeting","Budget planning and ad scheduling","Tracking of clicks, leads and sales","Regular improvements based on results"],f:["Instagram","Facebook","YouTube","Other platforms"]},
+chat:{t:"Chat agents",d:"Smart chat agents that talk to your customers on WhatsApp, Instagram and your website, any time of day.",g:["Instant replies to common questions","Collects names, numbers and requirements","Works day and night, even when you’re busy","Hands hot leads over to you"],f:["WhatsApp","Instagram","Website"]},
+growth:{t:"Business growth help",d:"Practical guidance to turn attention into sales: a clear offer, a simple funnel and content that fits your audience.",g:["Review of your offer and pricing","Simple sales funnel and follow-up plan","Content and ad ideas for your audience","A step-by-step growth plan"],f:["New businesses","Small businesses","Online sellers"]}
+};
+var ov=document.getElementById("ov"),last=null;
+function openSheet(card){
+ var d=D[card.getAttribute("data-k")];last=card;
+ document.getElementById("sh-top").style.background=getComputedStyle(card).backgroundColor;
+ document.getElementById("sh-i").innerHTML=card.querySelector(".ico").innerHTML;
+ document.getElementById("sh-t").textContent=d.t;
+ document.getElementById("sh-d").textContent=d.d;
+ var g=document.getElementById("sh-g");g.innerHTML="";
+ d.g.forEach(function(x,i){var li=document.createElement("li");li.textContent=x;li.style.animationDelay=(.15+i*.1)+"s";g.appendChild(li)});
+ var f=document.getElementById("sh-f");f.innerHTML="";
+ d.f.forEach(function(x){var sp=document.createElement("span");sp.textContent=x;f.appendChild(sp)});
+ document.getElementById("sh-w").href=WHATSAPP;
+ document.getElementById("sh-m").href="https://mail.google.com/mail/?view=cm&to="+EMAIL+"&su="+encodeURIComponent("Enquiry: "+d.t);
+ ov.classList.add("open");ov.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";
+ document.getElementById("sh-x").focus();
+}
+function closeSheet(){ov.classList.remove("open");ov.setAttribute("aria-hidden","true");document.body.style.overflow="";if(last)last.focus()}
+document.querySelectorAll(".svc").forEach(function(c){
+ c.addEventListener("click",function(){openSheet(c)});
+ c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openSheet(c)}});
+});
+document.getElementById("sh-x").addEventListener("click",closeSheet);
+ov.addEventListener("click",function(e){if(e.target===ov)closeSheet()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&ov.classList.contains("open"))closeSheet()});
 </script>
 </body>
 </html>
