@@ -3,228 +3,360 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bright Ads & Marketing</title>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-<script>document.documentElement.classList.add("js")</script>
+<title>Bright Ads & Marketing | Creative Digital Marketing Agency</title>
+<meta name="description" content="Bright Ads & Marketing is a creative digital marketing agency: UGC ads, banner ads, social media ad campaigns, chat agents, social media management, website building and business growth help.">
+<meta name="theme-color" content="#1c1a3a">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("ba-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <style>
-:root{--bg:#ffffff;--ink:#1c1a3a;--muted:#5b5877;--surface:#f4f2ff;--yellow:#ffc93c;--coral:#ff5c7a;--mint:#2ec4b6;--violet:#8b6cff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15132b;--ink:#f3f1ff;--muted:#b0acd0;--surface:#201d40}}
-:root[data-theme="dark"]{--bg:#15132b;--ink:#f3f1ff;--muted:#b0acd0;--surface:#201d40}
+:root{--y:#ffc93c;--c:#ff5c7a;--m:#2ec4b6;--p:#8b6cff;--navy:#1c1a3a;--bg:#ffffff;--ink:#1c1a3a;--card:#f4f2ff;--muted:#5b5877;--line:rgba(28,26,58,.14);--nav:rgba(255,255,255,.82);--glass:rgba(255,255,255,.58);--gb:rgba(255,255,255,.75);--sheet:rgba(255,255,255,.82)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15132b;--ink:#f3f1ff;--card:#201d40;--muted:#b0acd0;--line:rgba(243,241,255,.16);--nav:rgba(21,19,43,.82);--glass:rgba(255,255,255,.07);--gb:rgba(255,255,255,.16);--sheet:rgba(28,26,58,.8)}}
+:root[data-theme="dark"]{--bg:#15132b;--ink:#f3f1ff;--card:#201d40;--muted:#b0acd0;--line:rgba(243,241,255,.16);--nav:rgba(21,19,43,.82);--glass:rgba(255,255,255,.07);--gb:rgba(255,255,255,.16);--sheet:rgba(28,26,58,.8)}
 *{box-sizing:border-box;margin:0}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
-h1,h2,h3,.logo{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-header{display:flex;justify-content:space-between;align-items:center;padding:18px 0;position:relative;z-index:2}
-.logo{font-weight:800;font-size:20px;display:flex;align-items:center}
-.dot{width:14px;height:14px;border-radius:50%;background:var(--yellow);box-shadow:8px 0 0 var(--coral),16px 0 0 var(--mint);margin-right:26px;animation:blink 3s infinite}
-.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--ink);color:var(--ink);transition:transform .2s}
-.btn:active,.btn:hover{transform:scale(1.06)}
-.btn.main{background:var(--yellow);color:#1c1a3a;border-color:var(--yellow)}
-a:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
-.hero-wrap{position:relative;overflow:hidden}
-.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:drift 12s ease-in-out infinite alternate}
-.b1{width:260px;height:260px;background:var(--yellow);top:-40px;left:-60px}
-.b2{width:300px;height:300px;background:var(--coral);top:120px;right:-100px;animation-delay:-4s}
-.b3{width:240px;height:240px;background:var(--mint);bottom:-60px;left:30%;animation-delay:-8s}
-.hero{position:relative;display:grid;gap:30px;padding:30px 0 60px;align-items:center}
-.hero h1{font-size:clamp(40px,10vw,70px);font-weight:800;letter-spacing:-.02em}
-.hl{background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/0 .32em no-repeat;animation:ul 1.2s .5s forwards;color:var(--ink)}
-.hero p{color:var(--muted);margin:18px 0 26px;max-width:46ch}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.stack{position:relative;height:480px;max-width:360px;margin:0 auto;width:100%}
-.ad{position:absolute;width:54%;aspect-ratio:9/16;border-radius:22px;padding:14px;display:flex;flex-direction:column;gap:8px;font:800 17px/1.15 "Bricolage Grotesque",system-ui,sans-serif;color:#1c1a3a;transform:rotate(var(--r));animation:float 5s ease-in-out infinite}
-.ad.a{background:var(--yellow);left:0;top:40px;--r:-6deg}
-.ad.b{background:var(--coral);right:0;top:0;--r:6deg;animation-delay:-1.7s}
-.ad.c{background:var(--mint);left:23%;top:120px;--r:-1deg;z-index:2;box-shadow:0 14px 34px rgba(28,26,58,.3);animation-delay:-3.2s}
-.chip{align-self:flex-start;background:#1c1a3a;color:#fff;font:700 11px "DM Sans",sans-serif;padding:4px 10px;border-radius:99px}
-.play{margin-top:auto;width:44px;height:44px;border-radius:50%;background:#1c1a3a;display:grid;place-items:center;animation:pulse 2s infinite}
-.play::after{content:"";border-left:14px solid #ffc93c;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
-.fake-btn{margin-top:auto;align-self:flex-start;background:#1c1a3a;color:#fff;font:700 13px "DM Sans",sans-serif;padding:8px 14px;border-radius:99px;animation:pulse 2s infinite}
-.bub{font:500 13px/1.3 "DM Sans",sans-serif;padding:8px 11px;border-radius:14px;max-width:90%}
-.bub.u{background:#fff;align-self:flex-start;border-bottom-left-radius:4px}
-.bub.s{background:#1c1a3a;color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-.typing{display:flex;gap:4px;padding:8px 11px;background:#fff;border-radius:14px;align-self:flex-start;border-bottom-left-radius:4px}
-.typing i{width:6px;height:6px;border-radius:50%;background:#1c1a3a;animation:bounce 1s infinite}
-.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
-.mq{overflow:hidden;background:var(--ink);color:var(--bg);transform:rotate(-1.5deg);margin:6px -12px;padding:14px 0;font:800 20px "Bricolage Grotesque",sans-serif;white-space:nowrap}
-.mq div{display:flex;width:max-content;animation:mq 24s linear infinite}
-.mq span{padding-right:28px}
-section{padding:56px 0}
-h2{font-size:clamp(30px,7vw,46px);font-weight:800;margin-bottom:10px}
-.sub{color:var(--muted);max-width:52ch;margin-bottom:28px}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s;padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3,.disp{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;letter-spacing:-.02em}
+a{color:inherit}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:99px;font-weight:700;text-decoration:none;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-size:16px;font-family:inherit;transition:transform .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn.pri{background:var(--y);border-color:var(--y);color:var(--navy)}
+.btn::after,.act::after{content:"";position:absolute;top:0;left:-70%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:shine 3s infinite}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:background .3s,box-shadow .3s}
+.nav.sc{background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;height:70px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:20px;line-height:1}
+.logo small{display:block;font:500 11px "DM Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+.logo{white-space:nowrap}.logo svg{width:46px;height:21px;overflow:visible}.logo svg circle{transition:transform .4s}.logo:hover svg circle:nth-child(1){transform:translateX(-4px)}.logo:hover svg circle:nth-child(3){transform:translateX(4px)}@media(max-width:480px){.logo{font-size:16px;gap:8px}.logo svg{width:38px;height:17px}}
+.links{display:flex;gap:6px;list-style:none;padding:0;position:relative}
+.links a{display:block;padding:8px 14px;text-decoration:none;font-weight:500;font-size:15px;opacity:.75;transition:opacity .2s}
+.links a:hover,.links a.on{opacity:1}
+.ind{position:absolute;bottom:2px;height:3px;border-radius:3px;background:var(--c);transition:left .35s,width .35s;left:0;width:0}
+.tools{display:flex;align-items:center;gap:10px}
+.ib{width:42px;height:42px;border-radius:50%;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;font-size:18px;display:grid;place-items:center}
+.burger{display:none}
+.talk{padding:10px 20px;font-size:15px}
+.menu{display:none}
+@media(max-width:860px){.links,.talk{display:none}.burger{display:grid}
+.menu{display:flex;flex-direction:column;gap:4px;position:fixed;top:0;left:0;right:0;padding:90px 20px 24px;background:var(--bg);transform:translateY(-110%);transition:transform .4s;z-index:15;border-radius:0 0 28px 28px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.menu.open{transform:none}.menu a{font:800 30px "Bricolage Grotesque",sans-serif;text-decoration:none;padding:8px 0}.menu .btn{margin-top:12px;justify-content:center;font:700 17px "DM Sans"}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:120px 0 70px;min-height:100svh;display:flex;align-items:center}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+.b1{width:320px;height:320px;background:var(--y);top:40px;left:-90px}.b2{width:340px;height:340px;background:var(--p);top:200px;right:-120px;animation-delay:-5s}.b3{width:260px;height:260px;background:var(--m);bottom:-60px;left:35%;animation-delay:-9s}.b4{width:200px;height:200px;background:var(--c);top:10px;right:30%;opacity:.35;animation-delay:-3s}
+.hg{position:relative;display:grid;gap:40px;align-items:center;width:100%}
+h1{font-size:clamp(44px,11vw,84px);font-weight:800}
+h1 em{font-style:normal;background:linear-gradient(var(--y),var(--y)) 0 90%/0 .3em no-repeat;animation:ul 1.2s .6s forwards}
+.lead{color:var(--muted);margin:22px 0 30px;max-width:48ch;font-size:18px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.stack{position:relative;height:500px;max-width:420px;margin:0 auto;width:100%}
+.pc{position:absolute;transform:translate(calc(var(--mx,0)*var(--d)),calc(var(--my,0)*var(--d)));transition:transform .25s ease-out}
+.pc.a{left:0;top:50px;--d:14px;width:50%}.pc.b{right:0;top:0;--d:-22px;width:50%}.pc.c{left:22%;top:150px;--d:30px;width:58%;z-index:2}
+.ad{border-radius:22px;overflow:hidden;box-shadow:0 22px 44px rgba(28,26,58,.28);animation:float 6s ease-in-out infinite;transform:rotate(var(--r));color:var(--navy)}
+.pc.a .ad{--r:-6deg}.pc.b .ad{--r:6deg;animation-delay:-2s}.pc.c .ad{--r:-1deg;animation-delay:-4s}
+.vid{aspect-ratio:9/16;background:linear-gradient(160deg,var(--y),var(--c));position:relative}
+.vid .hd{position:absolute;left:50%;top:26%;width:34%;aspect-ratio:1;border-radius:50%;background:var(--navy);transform:translateX(-50%)}
+.vid .bd{position:absolute;left:50%;top:52%;width:62%;height:50%;border-radius:50% 50% 0 0;background:var(--navy);transform:translateX(-50%);opacity:.9}
+.vid .pl{position:absolute;right:10px;top:42%;display:grid;gap:8px}.vid .pl i{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.85);display:block}
+.vid .cap{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,255,255,.9);border-radius:12px;padding:7px 10px;font:700 11px "DM Sans";display:flex;justify-content:space-between}
+.vid .pg{position:absolute;left:10px;right:10px;top:10px;height:3px;background:rgba(255,255,255,.5);border-radius:3px}.vid .pg::after{content:"";position:absolute;inset:0;width:40%;background:#fff;border-radius:3px;animation:prog 6s linear infinite}
+.ban{background:var(--c);padding:16px;aspect-ratio:9/16;display:flex;flex-direction:column;gap:10px}
+.ban .tag{align-self:flex-start;background:var(--navy);color:#fff;font:700 10px "DM Sans";padding:4px 10px;border-radius:99px;letter-spacing:.1em}
+.ban h4{font:800 28px/.95 "Bricolage Grotesque";margin-top:6px}
+.ban .shape{margin-top:auto;height:90px;border-radius:50% 50% 14px 14px;background:var(--y);position:relative}.ban .shape::after{content:"";position:absolute;left:18%;top:-14px;width:36px;height:36px;border-radius:50%;background:var(--m)}
+.ban .cta{background:var(--navy);color:#fff;text-align:center;border-radius:99px;padding:8px;font:700 12px "DM Sans";animation:pulse 2s infinite}
+.chat{background:var(--m);padding:12px;display:flex;flex-direction:column;gap:8px;aspect-ratio:9/15}
+.chat .top{display:flex;align-items:center;gap:8px;font:800 13px "Bricolage Grotesque"}.chat .top i{width:26px;height:26px;border-radius:50%;background:var(--navy);display:block;position:relative}.chat .top i::after{content:"";position:absolute;right:-1px;bottom:-1px;width:9px;height:9px;border-radius:50%;background:#2fd16a;border:2px solid var(--m)}
+.bub{font:500 13px/1.35 "DM Sans";padding:9px 12px;border-radius:15px;max-width:88%;animation:pop .5s both}
+.bub.u{background:#fff;align-self:flex-start;border-bottom-left-radius:4px}.bub.s{background:var(--navy);color:#fff;align-self:flex-end;border-bottom-right-radius:4px;animation-delay:.4s}
+.typing{display:flex;gap:4px;padding:10px 12px;background:#fff;border-radius:15px;border-bottom-left-radius:4px;align-self:flex-start}.typing i{width:6px;height:6px;border-radius:50%;background:var(--navy);animation:bounce 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@media(min-width:900px){.hg{grid-template-columns:1.1fr .9fr}}
+/* strip */
+.mq{background:var(--navy);color:#ffffff;overflow:hidden;padding:18px 0;transform:rotate(-1.2deg);margin:10px -10px;white-space:nowrap}
+.mq div{display:flex;width:max-content;animation:mq 22s linear infinite}
+.mq span{display:flex;align-items:center;gap:26px;padding-right:26px;font:800 clamp(20px,4vw,30px) "Bricolage Grotesque"}
+.mq i{font-style:normal;color:var(--y)}.mq span:nth-child(odd) i{color:var(--c)}
+/* sections */
+section{padding:84px 0}
+.eyebrow{font:700 13px "DM Sans";letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:10px}.eyebrow::before{content:"";width:28px;height:3px;background:var(--c);border-radius:3px}
+h2{font-size:clamp(34px,7vw,60px);font-weight:800;max-width:15ch}
+.sub{color:var(--muted);max-width:50ch;margin:16px 0 40px}
 .grid{display:grid;gap:16px}
-.svc{border-radius:24px;padding:24px;color:#1c1a3a;transition:transform .25s}
-.svc:hover,.svc:active{transform:translateY(-6px) rotate(-1deg)}
-.svc:nth-child(1){background:var(--yellow)}.svc:nth-child(2){background:var(--coral)}.svc:nth-child(3){background:var(--mint)}
-.svc:nth-child(4){background:var(--violet)}.svc:nth-child(5){background:#ffb085}
-.ico{width:54px;height:54px;border-radius:16px;background:rgba(255,255,255,.55);display:grid;place-items:center;font-size:28px;margin-bottom:14px;animation:wiggle 4s infinite}
-.svc h3{font-size:23px;margin-bottom:6px}
-.svc p{font-size:16px;opacity:.85}
-.steps{display:grid;gap:22px}
-.step{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start}
-.num{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font:800 20px "Bricolage Grotesque",sans-serif;color:#1c1a3a}
-.step:nth-child(1) .num{background:var(--yellow)}.step:nth-child(2) .num{background:var(--coral)}.step:nth-child(3) .num{background:var(--mint)}.step:nth-child(4) .num{background:var(--violet)}
-.step h3{font-size:21px}.step p{color:var(--muted);font-size:16px}
-.contact{background:linear-gradient(120deg,#1c1a3a,#4b2a8f,#d94a8c,#1c1a3a);background-size:300% 300%;animation:grad 10s ease infinite;color:#fff;border-radius:28px;padding:44px 24px;text-align:center;margin:20px 0 40px}
-.contact p{opacity:.9;margin:0 auto 24px;max-width:44ch}
-.contact .cta{justify-content:center}
-.contact .btn{border-color:#fff;color:#fff}.contact .btn.main{color:#1c1a3a;border-color:var(--yellow)}
-.mail{margin-top:18px!important;font-size:15px}
-footer{color:var(--muted);font-size:14px;padding:0 0 90px;text-align:center}
-.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:13px 20px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.3);animation:pulse 2.4s infinite}
-.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
-.js .rv.in{opacity:1;transform:none}
-.svc{cursor:pointer}
-.more{display:inline-block;margin-top:14px;font-weight:700;font-size:15px;background:rgba(255,255,255,.55);padding:6px 14px;border-radius:99px;animation:nudge 2.2s ease-in-out infinite}
-.ov{position:fixed;inset:0;background:rgba(10,8,30,.62);backdrop-filter:blur(4px);z-index:10;display:none;align-items:flex-end;justify-content:center}
+.svc{position:relative;border-radius:28px;padding:28px;color:var(--navy);cursor:pointer;min-height:260px;display:flex;flex-direction:column;border:0;text-align:left;font:inherit;overflow:hidden;transition:transform .3s}
+.svc:hover{transform:translateY(-8px) rotate(-.6deg)}
+.svc[data-k=ugc]{background:var(--y)}.svc[data-k=banner]{background:var(--c)}.svc[data-k=social]{background:var(--m)}.svc[data-k=chat]{background:var(--p)}.svc[data-k=growth]{background:linear-gradient(135deg,var(--y),var(--c))}
+.svc .n{font:800 14px "DM Sans";opacity:.6}
+.svc .ic{width:60px;height:60px;border-radius:18px;background:rgba(255,255,255,.55);display:grid;place-items:center;font-size:30px;margin:14px 0}
+.svc h3{font-size:clamp(24px,4vw,32px);font-weight:800}
+.svc p{margin-top:8px;font-size:16px;opacity:.82;max-width:34ch}
+.arr{position:absolute;right:22px;top:22px;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:20px;transition:transform .3s}
+.svc:hover .arr{transform:rotate(45deg) scale(1.1)}
+@media(min-width:800px){.grid{grid-template-columns:repeat(6,1fr)}.svc{grid-column:span 2}.svc[data-k=ugc],.svc[data-k=banner]{grid-column:span 3;min-height:300px}}
+/* about */
+.ab{display:grid;gap:36px;align-items:center}
+.ab h2{max-width:12ch}.ab p{color:var(--muted);font-size:19px;max-width:46ch}
+.art{position:relative;height:340px;max-width:420px;width:100%;margin:0 auto}
+.art i{position:absolute;display:block}
+.art .o1{width:62%;aspect-ratio:1;border-radius:50%;background:var(--y);left:0;top:0;animation:drift 9s ease-in-out infinite alternate}
+.art .o2{width:46%;aspect-ratio:1;border-radius:50%;background:var(--c);right:4%;top:22%;mix-blend-mode:multiply;animation:drift 11s ease-in-out infinite alternate-reverse}
+.art .o3{width:40%;height:46%;border-radius:100px 100px 0 0;background:var(--m);left:18%;bottom:0}
+.art .o4{width:56px;height:56px;background:var(--navy);right:12%;bottom:8%;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);animation:spin 12s linear infinite}
+.art .o5{width:24%;height:10px;border-radius:10px;background:var(--p);left:4%;bottom:14%}
+@media(min-width:860px){.ab{grid-template-columns:1.1fr .9fr}}
+/* process */
+.steps{display:grid;gap:20px;counter-reset:s;position:relative}
+.st{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;position:relative}
+.st .no{font:800 54px "Bricolage Grotesque";line-height:1;color:var(--y)}.st:nth-child(2) .no{color:var(--c)}.st:nth-child(3) .no{color:#2ec4b6}.st:nth-child(4) .no{color:#8b6cff}
+.st h3{font-size:24px;margin:12px 0 6px}.st p{color:var(--muted);font-size:16px}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr);padding-top:24px}.steps::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--y),var(--c),var(--m),var(--p));border-radius:3px;transform-origin:left;transform:scaleX(0);transition:transform 1.4s}.steps.in::before{transform:none}.st:nth-child(even){margin-top:34px}}
+/* contact */
+.ct{border-radius:36px;padding:clamp(36px,8vw,80px) 24px;text-align:center;color:#ffffff;background:linear-gradient(120deg,#1c1a3a,#4b2a8f,#d94a8c,#1c1a3a);background-size:300% 300%;animation:grad 12s ease infinite;overflow:hidden;position:relative}
+.ct h2{max-width:14ch;margin:0 auto;color:#fff}.ct p{max-width:46ch;margin:18px auto 30px;opacity:.88}
+.ct .row{justify-content:center}.ct .btn{border-color:#fff;color:#fff}.ct .btn.pri{border-color:var(--y);color:var(--navy)}
+.ct .em{margin-top:24px;font-size:15px;opacity:.85}
+footer{padding:50px 0 100px;border-top:1px solid var(--line);margin-top:60px}
+.fg{display:grid;gap:30px}
+footer h4{font:700 13px "DM Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px}footer a{text-decoration:none;opacity:.85}footer a:hover{opacity:1;text-decoration:underline}
+footer .d{color:var(--muted);max-width:34ch;margin-top:14px;font-size:15px}
+.copy{margin-top:34px;color:var(--muted);font-size:14px}
+@media(min-width:800px){.fg{grid-template-columns:1.5fr 1fr 1fr 1fr}}
+.fwa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:12;display:flex;align-items:center;gap:8px;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:14px 20px;border-radius:99px;box-shadow:0 10px 26px rgba(0,0,0,.3);animation:pulse 2.6s infinite}
+/* modal */
+.ov{position:fixed;inset:0;background:rgba(10,12,30,.64);backdrop-filter:blur(5px);z-index:30;display:none;align-items:flex-end;justify-content:center}
 .ov.open{display:flex;animation:fade .25s}
-.sheet{background:var(--bg);color:var(--ink);width:100%;max-width:560px;max-height:90vh;overflow:auto;border-radius:28px 28px 0 0;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px));animation:up .4s cubic-bezier(.2,.9,.3,1)}
-.sh-top{padding:26px 22px 20px;color:#1c1a3a;position:relative}
-.sh-top .ico{margin-bottom:10px;animation:none}
-.sh-top h3{font-size:30px}
-.x{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.65);font-size:22px;line-height:1;color:#1c1a3a;cursor:pointer}
-.sh-body{padding:6px 22px 0}
-.sh-body>p{color:var(--muted);margin-top:14px}
-.sh-body h4{font:800 17px "Bricolage Grotesque",sans-serif;margin:18px 0 10px}
-.sh-body ul{padding:0}
-.sh-body li{list-style:none;padding-left:30px;position:relative;margin-bottom:9px;opacity:0;animation:li .45s forwards}
-.sh-body li::before{content:"✓";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:var(--mint);color:#1c1a3a;font-size:13px;font-weight:800;display:grid;place-items:center}
-.tags{display:flex;flex-wrap:wrap;gap:8px}
-.tags span{background:var(--surface);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:500}
-.acts{display:grid;gap:12px;padding:22px 22px 0}
-.act{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:999px;font-weight:700;font-size:17px;text-decoration:none;color:#fff;animation:pulse 2.4s infinite}
-.act.w{background:#25d366}.act.g{background:#ea4335;animation-delay:-1.2s}
-.act::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 2.6s infinite}
-@media(min-width:760px){.ov{align-items:center}.sheet{border-radius:28px}}
-@keyframes up{from{transform:translateY(60px);opacity:0}}
-@keyframes fade{from{opacity:0}}
-@keyframes li{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
-@keyframes shine{to{left:130%}}
-@keyframes nudge{50%{transform:translateX(6px)}}
-@keyframes float{50%{transform:rotate(var(--r)) translateY(-14px)}}
-@keyframes drift{to{transform:translate(40px,30px) scale(1.15)}}
-@keyframes ul{to{background-size:100% .32em}}
-@keyframes pulse{50%{transform:scale(1.08)}}
+.sh{background:var(--bg);color:var(--ink);width:100%;max-width:580px;max-height:92vh;overflow:auto;border-radius:30px 30px 0 0;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));animation:up .45s cubic-bezier(.2,.9,.3,1)}
+.ov.out .sh{animation:down .25s forwards}.ov.out{animation:fadeo .25s forwards}
+.sh .top{padding:28px 24px 22px;color:var(--navy);position:relative}
+.sh .top .ic{width:56px;height:56px;border-radius:16px;background:rgba(255,255,255,.6);display:grid;place-items:center;font-size:28px;margin-bottom:12px}
+.sh h3{font-size:clamp(28px,6vw,38px)}
+.x{position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.7);color:var(--navy);font-size:24px;cursor:pointer}
+.sh .bd{padding:6px 24px 0}.sh .bd>p{color:var(--muted);margin-top:14px}
+.sh h5{font:800 17px "Bricolage Grotesque";margin:20px 0 10px}
+.sh ul{padding:0}.sh li{list-style:none;padding-left:32px;position:relative;margin-bottom:9px;opacity:0;animation:li .45s forwards}
+.sh li::before{content:"✓";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:var(--m);color:var(--navy);font-size:13px;font-weight:800;display:grid;place-items:center}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tags span{background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:14px;font-weight:500}
+.acts{display:grid;gap:12px;padding:22px 24px 0}
+.act{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;border-radius:99px;font-weight:700;text-decoration:none;color:#fff;animation:pulse 2.6s infinite}
+.act.w{background:#25d366}.act.g{background:#ea4335;animation-delay:-1.3s}
+@media(min-width:800px){.ov{align-items:center}.sh{border-radius:30px}}
+/* cursor */
+.cur{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--c);mix-blend-mode:multiply;pointer-events:none;z-index:50;opacity:0;transition:width .2s,height .2s,opacity .2s}
+.cur.big{width:46px;height:46px;margin:-14px 0 0 -14px}
+@media(pointer:coarse){.cur{display:none}}
+/* glass + extra motion */
+.amb{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.amb i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.38;animation:drift2 18s ease-in-out infinite alternate}
+.amb i:nth-child(1){width:420px;height:420px;background:var(--p);top:20%;left:-120px}
+.amb i:nth-child(2){width:380px;height:380px;background:var(--c);top:55%;right:-140px;animation-delay:-6s}
+.amb i:nth-child(3){width:340px;height:340px;background:var(--y);bottom:-100px;left:30%;animation-delay:-11s}
+.prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:40;background:linear-gradient(90deg,var(--y),var(--c),var(--m),var(--p))}
+.sp{position:absolute;pointer-events:none;z-index:1}
+.sp.s1{width:34px;height:34px;border:5px solid var(--c);border-radius:50%;top:16%;left:8%;animation:sway 8s ease-in-out infinite}
+.sp.s2{width:28px;height:28px;background:var(--y);top:70%;left:46%;clip-path:polygon(50% 0,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);animation:spin 10s linear infinite}
+.sp.s3{width:16px;height:16px;background:var(--m);border-radius:50%;top:28%;right:8%;animation:sway 6s ease-in-out infinite -2s}
+.sp.s4{width:30px;height:30px;border:5px solid var(--p);border-radius:8px;bottom:12%;right:12%;animation:sway 9s ease-in-out infinite -4s}
+.sp.s5{width:12px;height:12px;background:var(--c);border-radius:50%;top:46%;left:3%;animation:sway 7s ease-in-out infinite -1s}
+.mq #mq2{animation-direction:reverse;animation-duration:26s;margin-top:8px;opacity:.7}
+.svc{animation:bob 6s ease-in-out infinite;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6),0 16px 36px rgba(28,26,58,.18)}
+.svc:nth-child(2){animation-delay:-1.2s}.svc:nth-child(3){animation-delay:-2.4s}.svc:nth-child(4){animation-delay:-3.6s}.svc:nth-child(5){animation-delay:-4.8s}
+.svc::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.5),rgba(255,255,255,0) 55%);pointer-events:none}
+.svc>*{position:relative}.svc .arr{position:absolute}
+.svc .ic{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.75);box-shadow:0 6px 16px rgba(28,26,58,.12)}
+.st{background:var(--glass);backdrop-filter:blur(18px) saturate(170%);-webkit-backdrop-filter:blur(18px) saturate(170%);border:1px solid var(--gb);box-shadow:0 12px 32px rgba(28,26,58,.12),inset 0 1px 0 var(--gb);animation:bob 7s ease-in-out infinite}
+.st:nth-child(2){animation-delay:-1.7s}.st:nth-child(3){animation-delay:-3.4s}.st:nth-child(4){animation-delay:-5s}
+.ib,.tags span{background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--gb)}
+.sh{background:var(--sheet);backdrop-filter:blur(26px) saturate(170%);-webkit-backdrop-filter:blur(26px) saturate(170%);border:1px solid var(--gb)}
+.menu{background:var(--sheet);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px)}
+.ct .btn:not(.pri){background:rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:rgba(255,255,255,.5)}
+.ct{box-shadow:0 30px 70px rgba(28,26,58,.3),inset 0 1px 0 rgba(255,255,255,.3)}
+.ad{border:1px solid rgba(255,255,255,.5)}
+.fwa{border:1px solid rgba(255,255,255,.5)}
+footer{background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.logo svg circle{animation:cir 3.2s ease-in-out infinite}.logo svg circle:nth-child(2){animation-delay:-1s}.logo svg circle:nth-child(3){animation-delay:-2s}
+@keyframes bob{50%{translate:0 -9px}}
+@keyframes sway{50%{translate:16px -22px;rotate:25deg}}
+@keyframes cir{50%{translate:0 -2.5px}}
+@keyframes drift2{to{transform:translate(140px,-90px) scale(1.2)}}
+/* premium polish */
+.sp{z-index:0;opacity:.85}.hg{z-index:1}
+.mq{background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);transform:none;margin:0;padding:16px 0;border-block:1px solid var(--line)}
+.mq div{animation-duration:50s}.mq #mq2{animation-duration:64s}
+.mq #mq2 span{color:transparent;-webkit-text-stroke:1px var(--ink)}.mq #mq2 span i{-webkit-text-stroke:0}
+.nav.sc{background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.nav .w{transition:all .45s cubic-bezier(.2,.8,.2,1)}
+.nav.sc .w{max-width:1060px;width:calc(100% - 24px);margin:8px auto 0;height:62px;padding:0 14px 0 18px;background:var(--nav);backdrop-filter:blur(18px) saturate(170%);-webkit-backdrop-filter:blur(18px) saturate(170%);border:1px solid var(--gb);border-radius:99px;box-shadow:0 12px 34px rgba(28,26,58,.14),inset 0 1px 0 var(--gb)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:55;opacity:.06;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+::selection{background:var(--y);color:#1c1a3a}
+h1,h2{text-wrap:balance}
+.btn.pri{background:linear-gradient(135deg,var(--y),#ffb347);box-shadow:0 12px 26px rgba(255,201,60,.35)}
+.btn:not(.pri){background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.svc{animation-duration:9s}.svc:hover{box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),0 26px 50px rgba(28,26,58,.28)}
+.st{animation-duration:10s}
+@keyframes bob{50%{translate:0 -6px}}
+/* new services + social icons */
+.svc[data-k=smm]{background:linear-gradient(135deg,var(--m),var(--p))}.svc[data-k=web]{background:linear-gradient(135deg,var(--p),var(--c))}
+@media(min-width:800px){.svc[data-k=smm],.svc[data-k=web]{grid-column:span 3}}
+.svc:nth-child(6){animation-delay:-6s}.svc:nth-child(7){animation-delay:-7.2s}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.soc a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--gb);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:1;text-decoration:none;transition:transform .3s,background .3s,color .3s}
+.soc a:hover{transform:translateY(-4px) rotate(-6deg);background:var(--y);color:#1c1a3a;text-decoration:none;opacity:1}
+.soc svg{width:19px;height:19px}
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
+@keyframes float{25%{transform:rotate(calc(var(--r) + 3deg)) translateY(-12px)}50%{transform:rotate(var(--r)) translateY(-24px)}75%{transform:rotate(calc(var(--r) - 3deg)) translateY(-10px)}}
+@keyframes drift{to{transform:translate(50px,34px) scale(1.15)}}
+@keyframes ul{to{background-size:100% .3em}}
+@keyframes shine{to{left:140%}}
+@keyframes pulse{50%{transform:scale(1.06)}}
 @keyframes bounce{40%{transform:translateY(-5px)}}
 @keyframes mq{to{transform:translateX(-50%)}}
-@keyframes wiggle{0%,90%,100%{transform:rotate(0)}93%{transform:rotate(-12deg)}96%{transform:rotate(12deg)}}
 @keyframes grad{50%{background-position:100% 50%}}
-@keyframes blink{50%{opacity:.4}}
-@media(min-width:760px){.hero{grid-template-columns:1.1fr .9fr}.grid{grid-template-columns:repeat(6,1fr)}.svc{grid-column:span 2}.svc:nth-child(4){grid-column:2/span 2}.svc:nth-child(5){grid-column:span 2}.steps{grid-template-columns:repeat(4,1fr)}.step{grid-template-columns:1fr}.contact{padding:64px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hl{background-size:100% .32em}.js .rv{opacity:1;transform:none}.sh-body li{opacity:1}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes prog{to{width:100%}}
+@keyframes pop{from{opacity:0;transform:scale(.8)}}
+@keyframes up{from{transform:translateY(70px);opacity:0}}
+@keyframes down{to{transform:translateY(70px);opacity:0}}
+@keyframes fade{from{opacity:0}}@keyframes fadeo{to{opacity:0}}
+@keyframes li{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.sh li{opacity:1}h1 em{background-size:100% .3em}.steps::before{transform:none}}
 </style>
 </head>
 <body>
-<div class="hero-wrap">
-<span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
-<div class="wrap">
-<header>
-  <div class="logo"><span class="dot"></span>Bright Ads &amp; Marketing</div>
-</header>
-<div class="hero">
-  <div>
-    <h1>Ads that get <span class="hl">noticed.</span> Growth you can see.</h1>
-    <p>We create UGC videos and banner ads, run them across social media, and build chat agents that talk to your customers for you.</p>
-    <div class="cta">
-      <a class="btn main js-wa" href="#contact">Chat on WhatsApp</a>
-      <a class="btn" href="#services">See services</a>
-    </div>
-  </div>
-  <div class="stack" aria-hidden="true">
-    <div class="ad a"><span class="chip">UGC ads</span>Videos people watch till the end<span class="play"></span></div>
-    <div class="ad b"><span class="chip">Banner ads</span>Banners that get clicks<span class="fake-btn">Shop now</span></div>
-    <div class="ad c"><span class="chip">Chat agents</span>Replies to customers 24/7<div class="bub u">Hi, what are your prices?</div><div class="bub s">Hi! Tell us what you need and we’ll help.</div><div class="typing"><i></i><i></i><i></i></div></div>
-  </div>
+<div class="amb" aria-hidden="true"><i></i><i></i><i></i></div><div class="prog" id="prog"></div>
+<header class="nav" id="nav"><div class="w">
+<a class="logo" href="#home" aria-label="Bright Ads & Marketing home"><svg viewBox="0 0 46 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="10" fill="#ffc93c"/><circle cx="23" cy="10.5" r="10" fill="#ff5c7a"/><circle cx="35.5" cy="10.5" r="10" fill="#2ec4b6"/></svg><span>Bright Ads &amp; Marketing</span></a>
+<ul class="links" id="links"><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><span class="ind" id="ind"></span></ul>
+<div class="tools"><button class="ib" id="th" aria-label="Toggle light and dark theme">◐</button><a class="btn pri talk" href="#contact">Let’s Talk</a><button class="ib burger" id="bg" aria-label="Open menu" aria-expanded="false">☰</button></div>
+</div></header>
+<nav class="menu" id="menu" aria-label="Mobile"><a href="#home">Home</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn pri" href="#contact">Let’s Talk</a></nav>
+
+<main>
+<div class="hero" id="home">
+<span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span><span class="sp s1"></span><span class="sp s2"></span><span class="sp s3"></span><span class="sp s4"></span><span class="sp s5"></span>
+<div class="w"><div class="hg">
+<div>
+<h1 class="rv">Ads that get <em>noticed.</em><br>Growth you can see.</h1>
+<p class="lead rv">We turn creative ideas into powerful digital experiences that attract attention, connect with audiences and help businesses grow.</p>
+<div class="row rv"><a class="btn pri" href="#services">Explore Our Services</a><a class="btn" href="#contact">Let’s Work Together</a></div>
 </div>
+<div class="stack" id="stack" aria-hidden="true">
+<div class="pc a"><div class="ad vid"><span class="pg"></span><span class="hd"></span><span class="bd"></span><span class="pl"><i></i><i></i><i></i></span><span class="cap"><span>@creator</span><span>▶ UGC</span></span></div></div>
+<div class="pc b"><div class="ad ban"><span class="tag">NEW DROP</span><h4>Make it impossible to ignore</h4><span class="shape"></span><span class="cta">Shop now</span></div></div>
+<div class="pc c"><div class="ad chat"><div class="top"><i></i>Chat agent</div><div class="bub u">Hi! Do you have this in stock?</div><div class="bub s">Yes! Tell us what you need and we’ll help.</div><div class="typing"><i></i><i></i><i></i></div></div></div>
 </div>
+</div></div>
 </div>
 
-<div class="mq" aria-hidden="true"><div>
-<span>UGC ADS ✦ BANNER ADS ✦ SOCIAL MEDIA CAMPAIGNS ✦ CHAT AGENTS ✦ BUSINESS GROWTH ✦</span>
-<span>UGC ADS ✦ BANNER ADS ✦ SOCIAL MEDIA CAMPAIGNS ✦ CHAT AGENTS ✦ BUSINESS GROWTH ✦</span>
+<div class="mq" aria-hidden="true"><div id="mq"></div><div id="mq2"></div></div>
+
+<section id="services"><div class="w">
+<p class="eyebrow rv">Services</p>
+<h2 class="rv">Creative solutions. Real business potential.</h2>
+<p class="sub rv">Everything your brand needs to attract attention, connect with customers and move forward.</p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="about"><div class="w ab">
+<div><p class="eyebrow rv">About</p><h2 class="rv">Big ideas. Bright thinking. Better marketing.</h2>
+<p class="rv" style="margin-top:20px">Bright Ads &amp; Marketing is a creative digital marketing agency focused on helping businesses communicate better, attract attention and grow through creative advertising and smarter digital experiences.</p></div>
+<div class="art rv" aria-hidden="true"><i class="o1"></i><i class="o2"></i><i class="o3"></i><i class="o4"></i><i class="o5"></i></div>
+</div></section>
+
+<section id="process"><div class="w">
+<p class="eyebrow rv">Our Process</p>
+<h2 class="rv">Simple process. Smarter execution.</h2>
+<div class="steps rv" id="steps" style="margin-top:40px">
+<div class="st"><div class="no">01</div><h3>Talk</h3><p>We understand your business, goals, audience and challenges.</p></div>
+<div class="st"><div class="no">02</div><h3>Plan</h3><p>We develop the creative direction and marketing strategy.</p></div>
+<div class="st"><div class="no">03</div><h3>Launch</h3><p>We bring your advertising campaigns and creative solutions to life.</p></div>
+<div class="st"><div class="no">04</div><h3>Improve</h3><p>We evaluate performance and identify opportunities to improve.</p></div>
+</div>
+</div></section>
+
+<section id="contact" style="padding-top:20px"><div class="w">
+<div class="ct rv">
+<h2>Let’s grow your business.</h2>
+<p>Have an idea, a product or a business ready for its next big move? Let’s talk about how Bright Ads &amp; Marketing can help.</p>
+<div class="row"><a class="btn pri js-wa" href="#contact">💬 Chat on WhatsApp</a><a class="btn js-mail" href="#contact">✉️ Send an Email</a></div>
+<p class="em">brightagency369@gmail.com</p>
+</div>
+</div></section>
+</main>
+
+<footer><div class="w"><div class="fg">
+<div><a class="logo" href="#home"><svg viewBox="0 0 46 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="10" fill="#ffc93c"/><circle cx="23" cy="10.5" r="10" fill="#ff5c7a"/><circle cx="35.5" cy="10.5" r="10" fill="#2ec4b6"/></svg><span>Bright Ads &amp; Marketing</span></a><p class="d">A creative digital marketing agency for brands that want to be noticed and ready to grow.</p><div class="soc"><a href="https://www.instagram.com/bright_ad_marketing" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a><a href="https://x.com/Brightagency369" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h4l12 16h-4z"/><path d="M4 20l6.5-7M13.5 11L20 4"/></svg></a><a href="https://www.linkedin.com/company/bright-ads-marketing369/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M10 9h4v2c1-1.5 2.5-2.3 4.2-2.3 3 0 3.8 2 3.8 4.8V21h-4v-6.5c0-1.5-.5-2.5-1.8-2.5S14 13 14 14.5V21h-4z"/></svg></a><a href="https://youtube.com/@brightadsanmarketing" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a><a href="https://www.tiktok.com/@bright_ads_marketing" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2.4 2 4.1 4.5 4.3"/></svg></a></div></div>
+<div><h4>Navigate</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Services</h4><ul id="fsv"></ul></div>
+<div><h4>Contact</h4><ul><li><a class="js-mail" href="#contact">brightagency369@gmail.com</a></li><li><a class="js-wa" href="#contact">Chat on WhatsApp</a></li></ul></div>
+</div><p class="copy">© <span id="yr">2026</span> Bright Ads &amp; Marketing. All rights reserved.</p></div></footer>
+
+<a class="fwa js-wa" href="#contact" aria-label="Chat on WhatsApp">💬 WhatsApp</a>
+<div class="cur" id="cur"></div>
+
+<div class="ov" id="ov" aria-hidden="true"><div class="sh" role="dialog" aria-modal="true" aria-labelledby="mt">
+<div class="top" id="mtop"><button class="x" id="mx" aria-label="Close">×</button><div class="ic" id="mi"></div><h3 id="mt"></h3></div>
+<div class="bd"><p id="md"></p><h5>What you get</h5><ul id="mg"></ul><h5>Great for</h5><div class="tags" id="mf"></div></div>
+<div class="acts"><a class="act w js-wa" href="#contact">💬 Chat on WhatsApp</a><a class="act g" id="mm" target="_blank" rel="noopener" href="#contact">✉️ Email Us</a></div>
 </div></div>
 
-<div class="wrap">
-<section id="services">
-  <h2 class="rv">What we do</h2>
-  <p class="sub rv">Everything your business needs to get found, get clicks and get customers.</p>
-  <div class="grid">
-    <div class="svc rv" data-k="ugc" tabindex="0" role="button"><div class="ico">🎬</div><h3>UGC ads</h3><p>Creator-style videos that feel like a friend’s recommendation and stop the scroll.</p><span class="more">Tap for details →</span></div>
-    <div class="svc rv" style="transition-delay:.1s" data-k="banner" tabindex="0" role="button"><div class="ico">🖼️</div><h3>Banner ads</h3><p>Clear, on-brand banners sized for Instagram, Facebook, YouTube and Google.</p><span class="more">Tap for details →</span></div>
-    <div class="svc rv" style="transition-delay:.2s" data-k="social" tabindex="0" role="button"><div class="ico">📣</div><h3>Social media ad campaigns</h3><p>We set up and run your ads on every major platform, then improve them based on results.</p><span class="more">Tap for details →</span></div>
-    <div class="svc rv" data-k="chat" tabindex="0" role="button"><div class="ico">💬</div><h3>Chat agents</h3><p>Chatbots for WhatsApp, Instagram and your website that answer customers and collect leads all day.</p><span class="more">Tap for details →</span></div>
-    <div class="svc rv" style="transition-delay:.1s" data-k="growth" tabindex="0" role="button"><div class="ico">📈</div><h3>Business growth help</h3><p>Offer, pricing, funnel and content guidance so your ads bring sales, not just views.</p><span class="more">Tap for details →</span></div>
-  </div>
-</section>
-
-<section>
-  <h2 class="rv">How we work</h2>
-  <p class="sub rv">Simple, in four steps.</p>
-  <div class="steps">
-    <div class="step rv"><div class="num">1</div><div><h3>Talk</h3><p>Tell us about your business and your goal.</p></div></div>
-    <div class="step rv" style="transition-delay:.1s"><div class="num">2</div><div><h3>Plan</h3><p>We pick the right ads and platforms.</p></div></div>
-    <div class="step rv" style="transition-delay:.2s"><div class="num">3</div><div><h3>Launch</h3><p>We create the ads and go live.</p></div></div>
-    <div class="step rv" style="transition-delay:.3s"><div class="num">4</div><div><h3>Improve</h3><p>We track results and keep improving.</p></div></div>
-  </div>
-</section>
-
-<div class="contact rv" id="contact">
-  <h2>Let’s grow your business</h2>
-  <p>Message us about what you sell and what you want to achieve. We’ll reply with a clear plan.</p>
-  <div class="cta">
-    <a class="btn main js-wa" href="#contact">WhatsApp us</a>
-    <a class="btn js-mail" href="#contact">Email</a>
-  </div>
-  <p class="mail">Email: brightagency369@gmail.com</p>
-</div>
-<footer>© 2026 Bright Ads &amp; Marketing</footer>
-</div>
-<a class="wa js-wa" href="#contact">WhatsApp</a>
-<div class="ov" id="ov" aria-hidden="true"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t">
-<div class="sh-top" id="sh-top"><button class="x" id="sh-x" aria-label="Close">×</button><div class="ico" id="sh-i"></div><h3 id="sh-t"></h3></div>
-<div class="sh-body"><p id="sh-d"></p><h4>What you get</h4><ul id="sh-g"></ul><h4>Great for</h4><div class="tags" id="sh-f"></div></div>
-<div class="acts"><a class="act w js-wa" id="sh-w" href="#contact">💬 Chat on WhatsApp</a><a class="act g" id="sh-m" target="_blank" rel="noopener" href="#contact">✉️ Email us</a></div>
-</div></div>
 <script>
-var WHATSAPP="https://wa.me/message/YA7BCDI3QYUOO1", EMAIL="brightagency369@gmail.com";
-document.querySelectorAll(".js-wa").forEach(function(a){a.href=WHATSAPP});
-var m=document.querySelector(".js-mail");m.href="https://mail.google.com/mail/?view=cm&to="+EMAIL;m.target="_blank";m.rel="noopener";
-var els=document.querySelectorAll(".rv");
-if("IntersectionObserver" in window){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});els.forEach(function(el){io.observe(el)})}else{els.forEach(function(el){el.classList.add("in")})}
-var D={
-ugc:{t:"UGC ads",d:"Short, creator-style videos that look like real people talking about your product, so viewers trust them and keep watching.",g:["Script and hook ideas built for your product","Vertical videos made for Reels, Shorts and Stories","Captions, music and clean editing included","Multiple versions so we can test what works best"],f:["Product brands","Local businesses","Apps and services"]},
-banner:{t:"Banner ads",d:"Eye-catching static and animated banners designed to match your brand and win the click.",g:["Sizes for feed, stories and display ads","Strong headline, offer and call to action","Several variations for A/B testing","Ready-to-upload files"],f:["Sales and offers","Festival campaigns","Lead generation"]},
-social:{t:"Social media ad campaigns",d:"We plan, launch and manage your ads on all major social platforms so your budget goes where it works.",g:["Campaign setup and audience targeting","Budget planning and ad scheduling","Tracking of clicks, leads and sales","Regular improvements based on results"],f:["Instagram","Facebook","YouTube","Other platforms"]},
-chat:{t:"Chat agents",d:"Smart chat agents that talk to your customers on WhatsApp, Instagram and your website, any time of day.",g:["Instant replies to common questions","Collects names, numbers and requirements","Works day and night, even when you’re busy","Hands hot leads over to you"],f:["WhatsApp","Instagram","Website"]},
-growth:{t:"Business growth help",d:"Practical guidance to turn attention into sales: a clear offer, a simple funnel and content that fits your audience.",g:["Review of your offer and pricing","Simple sales funnel and follow-up plan","Content and ad ideas for your audience","A step-by-step growth plan"],f:["New businesses","Small businesses","Online sellers"]}
-};
-var ov=document.getElementById("ov"),last=null;
-function openSheet(card){
- var d=D[card.getAttribute("data-k")];last=card;
- document.getElementById("sh-top").style.background=getComputedStyle(card).backgroundColor;
- document.getElementById("sh-i").innerHTML=card.querySelector(".ico").innerHTML;
- document.getElementById("sh-t").textContent=d.t;
- document.getElementById("sh-d").textContent=d.d;
- var g=document.getElementById("sh-g");g.innerHTML="";
- d.g.forEach(function(x,i){var li=document.createElement("li");li.textContent=x;li.style.animationDelay=(.15+i*.1)+"s";g.appendChild(li)});
- var f=document.getElementById("sh-f");f.innerHTML="";
- d.f.forEach(function(x){var sp=document.createElement("span");sp.textContent=x;f.appendChild(sp)});
- document.getElementById("sh-w").href=WHATSAPP;
- document.getElementById("sh-m").href="https://mail.google.com/mail/?view=cm&to="+EMAIL+"&su="+encodeURIComponent("Enquiry: "+d.t);
- ov.classList.add("open");ov.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";
- document.getElementById("sh-x").focus();
-}
-function closeSheet(){ov.classList.remove("open");ov.setAttribute("aria-hidden","true");document.body.style.overflow="";if(last)last.focus()}
-document.querySelectorAll(".svc").forEach(function(c){
- c.addEventListener("click",function(){openSheet(c)});
- c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openSheet(c)}});
-});
-document.getElementById("sh-x").addEventListener("click",closeSheet);
-ov.addEventListener("click",function(e){if(e.target===ov)closeSheet()});
-document.addEventListener("keydown",function(e){if(e.key==="Escape"&&ov.classList.contains("open"))closeSheet()});
-</script> 
-<script src="bright-chat.js?v=2"></script>
+/* ===== EDIT HERE ===== */
+var WHATSAPP_URL="https://wa.me/message/YA7BCDI3QYUOO1";
+var EMAIL="brightagency369@gmail.com";
+/* ===================== */
+var S=[
+{k:"ugc",t:"UGC Ads",i:"🎬",c:"var(--y)",s:"Creator-style ads that feel like a friend’s recommendation.",d:"We create creator-style advertising concepts and videos that feel natural, relatable and authentic, just like a recommendation from a friend.",g:["Creative video concepts","Attention-grabbing hooks","Product-focused storytelling","Ad-ready creative direction"],f:["E-commerce","Beauty","Lifestyle","Products","Startups"]},
+{k:"banner",t:"Banner Ads",i:"🖼️",c:"var(--c)",s:"Eye-catching creatives built for digital platforms.",d:"Make your brand impossible to ignore with professional, eye-catching advertising creatives designed for digital platforms.",g:["Instagram and Facebook banners","YouTube advertising creatives","Google display ad creatives","Consistent brand-focused designs"],f:["Promotions","Product launches","E-commerce","Brand awareness"]},
+{k:"social",t:"Social Media Ad Campaigns",i:"📣",c:"var(--m)",s:"Plan, launch and improve campaigns across major platforms.",d:"We help businesses plan, launch, manage and improve advertising campaigns across major digital advertising platforms.",g:["Campaign strategy","Audience targeting guidance","Ad campaign setup and management","Performance monitoring and optimisation"],f:["Lead generation","Local businesses","Online stores","Growing brands"]},
+{k:"chat",t:"Chat Agents",i:"💬",c:"var(--p)",s:"Intelligent chat agents that guide your customers.",d:"Turn customer conversations into better experiences with intelligent chat agents that help answer questions and guide potential customers.",g:["WhatsApp chat automation","Instagram chat automation","Website chat agents","Lead capture and FAQ automation"],f:["Customer support","Online businesses","Lead generation","Service providers"]},
+{k:"growth",t:"Business Growth Help",i:"📈",c:"linear-gradient(135deg,var(--y),var(--c))",s:"Smart guidance on offer, pricing, funnel and content.",d:"Smart marketing guidance to help you improve your business offer, pricing, customer journey, sales funnel and content strategy.",g:["Offer improvement ideas","Pricing strategy guidance","Sales funnel recommendations","Content and marketing direction"],f:["Entrepreneurs","Startups","Small businesses","Personal brands"]},
+{k:"smm",t:"Social Media Management",i:"📱",c:"linear-gradient(135deg,var(--m),var(--p))",s:"Consistent, creative content that keeps your pages active.",d:"We manage your brand’s social media presence with a clear content plan, creative posts and consistent posting, so your pages look active, professional and ready to grow.",g:["Content planning and calendar","Post, reel and story creative ideas","Caption writing and hashtag guidance","Page growth and engagement support"],f:["Local businesses","Personal brands","Startups","E-commerce brands"]},
+{k:"web",t:"Website Building",i:"🌐",c:"linear-gradient(135deg,var(--p),var(--c))",s:"Modern, mobile-friendly websites that build trust.",d:"We design and build modern, mobile-friendly websites that present your business clearly and make it easy for customers to contact you.",g:["Mobile-friendly responsive design","Clear pages for your services and brand","WhatsApp and email contact buttons","Hosting and launch guidance"],f:["Small businesses","Service providers","Startups","Personal brands"]}
+];
+var $=function(i){return document.getElementById(i)};
+$("yr").textContent=new Date().getFullYear();
+var items="UGC ADS|BANNER DESIGN|SOCIAL MEDIA CAMPAIGNS|CHAT AGENTS|BUSINESS GROWTH|SOCIAL MEDIA MANAGEMENT|WEBSITE BUILDING".split("|");
+var mq=items.map(function(x){return x+" <i>✳</i>"}).join(" ");
+$("mq").innerHTML=[1,2,3,4].map(function(){return"<span>"+mq+"</span>"}).join("");
+var mq2=items.slice().reverse().map(function(x){return x+" <i>✳</i>"}).join(" ");
+$("mq2").innerHTML=[1,2,3,4].map(function(){return"<span>"+mq2+"</span>"}).join("");
+$("grid").innerHTML=S.map(function(s,n){return'<button class="svc rv" data-k="'+s.k+'" style="transition-delay:'+n*.08+'s"><span class="n">0'+(n+1)+'</span><span class="ic">'+s.i+'</span><h3>'+s.t+'</h3><p>'+s.s+'</p><span class="arr">→</span></button>'}).join("");
+$("fsv").innerHTML=S.map(function(s){return'<li><a href="#services" data-open="'+s.k+'">'+s.t+'</a></li>'}).join("");
+document.querySelectorAll(".js-wa").forEach(function(a){a.href=WHATSAPP_URL;a.target="_blank";a.rel="noopener"});
+function setMail(a,sub){var m=matchMedia("(pointer:coarse)").matches,e=encodeURIComponent(sub);a.href=m?"mailto:"+EMAIL+"?subject="+e:"https://mail.google.com/mail/?view=cm&to="+EMAIL+"&su="+e;if(m)a.removeAttribute("target");else{a.target="_blank";a.rel="noopener"}}
+document.querySelectorAll(".js-mail").forEach(function(a){setMail(a,"Enquiry About Bright Ads & Marketing")});
+/* modal */
+var ov=$("ov"),last=null;
+function openM(k){var s=S.filter(function(x){return x.k===k})[0];if(!s)return;last=document.activeElement;
+$("mtop").style.background=s.c;$("mi").textContent=s.i;$("mt").textContent=s.t;$("md").textContent=s.d;
+$("mg").innerHTML=s.g.map(function(x,i){return'<li style="animation-delay:'+(.15+i*.1)+'s">'+x+'</li>'}).join("");
+$("mf").innerHTML=s.f.map(function(x){return"<span>"+x+"</span>"}).join("");
+setMail($("mm"),"Enquiry About "+s.t);
+ov.classList.remove("out");ov.classList.add("open");ov.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";$("mx").focus()}
+function closeM(){if(!ov.classList.contains("open"))return;ov.classList.add("out");setTimeout(function(){ov.classList.remove("open","out");ov.setAttribute("aria-hidden","true");document.body.style.overflow="";if(last)last.focus()},250)}
+document.addEventListener("click",function(e){var c=e.target.closest("[data-k],[data-open]");if(c&&!ov.contains(c)){e.preventDefault();openM(c.dataset.k||c.dataset.open)}if(e.target===ov)closeM()});
+$("mx").onclick=closeM;document.addEventListener("keydown",function(e){if(e.key==="Escape")closeM()});
+/* theme */
+$("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"),n=d==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("ba-theme",n)}catch(e){}};
+/* menu */
+var bg=$("bg"),menu=$("menu");
+function tm(o){menu.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.textContent=o?"✕":"☰"}
+bg.onclick=function(){tm(!menu.classList.contains("open"))};menu.querySelectorAll("a").forEach(function(a){a.onclick=function(){tm(false)}});
+/* nav scroll + indicator */
+var nav=$("nav"),ind=$("ind"),la=[].slice.call(document.querySelectorAll("#links a"));
+var pg=$("prog");addEventListener("scroll",function(){nav.classList.toggle("sc",scrollY>20);pg.style.width=(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100)+"%"},{passive:true});
+function mark(id){la.forEach(function(a){var on=a.getAttribute("href")==="#"+id;a.classList.toggle("on",on);if(on){ind.style.left=a.offsetLeft+14+"px";ind.style.width=a.offsetWidth-28+"px"}})}
+var secs=["home","services","about","process","contact"].map($);
+if("IntersectionObserver" in window){var so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)mark(x.target.id)})},{rootMargin:"-45% 0px -50% 0px"});secs.forEach(function(s){so.observe(s)});
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)})}
+else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
+/* hero parallax + cursor (desktop) */
+if(matchMedia("(pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+var st=$("stack"),cur=$("cur");
+$("home").addEventListener("pointermove",function(e){var r=st.getBoundingClientRect();st.style.setProperty("--mx",((e.clientX-r.left)/r.width-.5)*2);st.style.setProperty("--my",((e.clientY-r.top)/r.height-.5)*2)});
+addEventListener("pointermove",function(e){cur.style.opacity=1;cur.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)";cur.classList.toggle("big",!!e.target.closest("a,button"))})}
+</script>
 </body>
 </html>
