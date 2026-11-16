@@ -204,6 +204,41 @@ h1,h2{text-wrap:balance}
 .soc a{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--glass);border:1px solid var(--gb);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:1;text-decoration:none;transition:transform .3s,background .3s,color .3s}
 .soc a:hover{transform:translateY(-4px) rotate(-6deg);background:var(--y);color:#1c1a3a;text-decoration:none;opacity:1}
 .soc svg{width:19px;height:19px}
+/* chat assistant */
+.btl{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:12;display:flex;align-items:center;gap:8px;padding:13px 18px;border-radius:99px;border:1px solid var(--gb);background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:var(--ink);font:700 15px "DM Sans",sans-serif;cursor:pointer;box-shadow:0 10px 26px rgba(28,26,58,.2);animation:pulse 3s infinite}
+.btw{position:fixed;left:16px;bottom:calc(82px + env(safe-area-inset-bottom,0px));z-index:35;width:min(380px,calc(100vw - 32px));height:min(540px,calc(100svh - 130px));display:none;flex-direction:column;border-radius:26px;overflow:hidden;background:var(--sheet);backdrop-filter:blur(26px) saturate(170%);-webkit-backdrop-filter:blur(26px) saturate(170%);border:1px solid var(--gb);box-shadow:0 30px 70px rgba(28,26,58,.35)}
+.btw.open{display:flex;animation:up .35s cubic-bezier(.2,.9,.3,1)}
+.bth{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;background:linear-gradient(120deg,var(--y),var(--c));color:#1c1a3a}
+.bth b{font:800 17px "Bricolage Grotesque",sans-serif;display:block}.bth small{font-size:12px;opacity:.85;display:flex;align-items:center;gap:6px}.bth small::before{content:"";width:8px;height:8px;border-radius:50%;background:#1f9d55}
+.bth button{width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.6);color:#1c1a3a;font-size:20px;cursor:pointer}
+.btm{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:8px}
+.bm{max-width:86%;padding:10px 13px;border-radius:16px;font-size:15px;line-height:1.45;white-space:pre-wrap;animation:pop .3s both}
+.bm.bot{background:var(--card);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:4px}
+.bm.me{background:linear-gradient(135deg,var(--y),#ffb347);color:#1c1a3a;align-self:flex-end;border-bottom-right-radius:4px}
+.bm.ty{display:flex;gap:4px;padding:12px 14px}.bm.ty i{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:bounce 1s infinite}.bm.ty i:nth-child(2){animation-delay:.15s}.bm.ty i:nth-child(3){animation-delay:.3s}
+.bta{display:flex;gap:8px;flex-wrap:wrap}.bta a{padding:8px 14px;border-radius:99px;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:14px}.bta a:last-child{background:#ea4335}
+.btq{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}.btq button{padding:7px 12px;border-radius:99px;border:1px solid var(--gb);background:var(--glass);color:var(--ink);font:500 13px "DM Sans",sans-serif;cursor:pointer}
+.bti{display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line)}
+.bti input{flex:1;min-width:0;padding:12px 14px;border-radius:99px;border:1px solid var(--gb);background:var(--glass);color:var(--ink);font:16px "DM Sans",sans-serif}
+.bti button{width:46px;border-radius:50%;border:0;background:var(--y);color:#1c1a3a;font-size:18px;cursor:pointer}
+/* chat launcher: round, robot + logo, draggable */
+.btl{width:64px;height:64px;padding:0;gap:0;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:var(--card);border:2px solid var(--gb);touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;box-shadow:0 12px 30px rgba(28,26,58,.3),0 0 0 4px rgba(255,201,60,.25)}
+.btl svg{width:100%;height:100%;display:block;pointer-events:none}
+.btl.drag{cursor:grabbing;animation:none;transform:scale(1.1)}
+.btl .rb{animation:rbob 3s ease-in-out infinite}
+.btl .eye{transform-box:fill-box;transform-origin:center;animation:blink2 4s infinite}
+@keyframes rbob{50%{translate:0 -2px}}
+@keyframes blink2{0%,92%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+/* chat launcher v2: simple chat bubble + robot face */
+.btl{background:linear-gradient(135deg,#ffc93c,#ff5c7a);border:2px solid rgba(255,255,255,.75);animation:ripple 2.6s infinite}
+.btl .fl{animation:rbob 3s ease-in-out infinite}
+.btl .bb{transform-box:fill-box;transform-origin:30% 100%;animation:wig 6s ease-in-out infinite}
+.btl .ant{animation:antg 1.6s infinite}
+.btl .on{transform-box:fill-box;transform-origin:center;animation:onp 1.8s ease-in-out infinite}
+@keyframes ripple{0%{box-shadow:0 12px 30px rgba(28,26,58,.3),0 0 0 0 rgba(255,92,122,.55)}100%{box-shadow:0 12px 30px rgba(28,26,58,.3),0 0 0 22px rgba(255,92,122,0)}}
+@keyframes wig{0%,78%,100%{transform:rotate(0)}82%{transform:rotate(-10deg)}86%{transform:rotate(9deg)}90%{transform:rotate(-6deg)}94%{transform:rotate(3deg)}}
+@keyframes antg{50%{fill:#ff5c7a}}
+@keyframes onp{50%{transform:scale(1.35)}}
 .js .rv{opacity:0;transform:translateY(32px);transition:opacity .8s,transform .8s}.js .rv.in{opacity:1;transform:none}
 @keyframes float{25%{transform:rotate(calc(var(--r) + 3deg)) translateY(-12px)}50%{transform:rotate(var(--r)) translateY(-24px)}75%{transform:rotate(calc(var(--r) - 3deg)) translateY(-10px)}}
 @keyframes drift{to{transform:translate(50px,34px) scale(1.15)}}
@@ -244,7 +279,7 @@ h1,h2{text-wrap:balance}
 <div class="stack" id="stack" aria-hidden="true">
 <div class="pc a"><div class="ad vid"><span class="pg"></span><span class="hd"></span><span class="bd"></span><span class="pl"><i></i><i></i><i></i></span><span class="cap"><span>@creator</span><span>▶ UGC</span></span></div></div>
 <div class="pc b"><div class="ad ban"><span class="tag">NEW DROP</span><h4>Make it impossible to ignore</h4><span class="shape"></span><span class="cta">Shop now</span></div></div>
-<div class="pc c"><div class="ad chat"><div class="top"><i></i>Chat agent</div><div class="bub u">Hi! Do you have this in stock?</div><div class="bub s">Yes! Tell us what you need and we’ll help.</div><div class="typing"><i></i><i></i><i></i></div></div></div>
+<div class="pc c"><div class="ad chat"><div class="top"><i></i>Chat agent</div><div class="bub u" id="cu">Do you manage social media pages?</div><div class="typing" id="ct" style="display:none"><i></i><i></i><i></i></div><div class="bub s" id="cs">Yes! We plan content, posts and reels.</div></div></div>
 </div>
 </div></div>
 </div>
@@ -293,6 +328,13 @@ h1,h2{text-wrap:balance}
 </div><p class="copy">© <span id="yr">2026</span> Bright Ads &amp; Marketing. All rights reserved.</p></div></footer>
 
 <a class="fwa js-wa" href="#contact" aria-label="Chat on WhatsApp">💬 WhatsApp</a>
+<button class="btl" id="btl" aria-label="Open chat assistant" aria-expanded="false" title="Chat assistant (drag to move)"><svg viewBox="0 0 64 64" aria-hidden="true"><g class="fl"><g class="bb"><path d="M32 14V9" stroke="#1c1a3a" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="32" cy="7.5" r="2.8" fill="#1c1a3a"/><path d="M25 14h14a11 11 0 0 1 11 11v8a11 11 0 0 1-11 11H29l-9 8v-9.5A11 11 0 0 1 14 33v-8a11 11 0 0 1 11-11z" fill="#fff"/><circle class="eye" cx="26" cy="28" r="3.3" fill="#1c1a3a"/><circle class="eye" cx="38" cy="28" r="3.3" fill="#1c1a3a"/><path d="M26 35q6 4.5 12 0" stroke="#1c1a3a" stroke-width="2.3" fill="none" stroke-linecap="round"/></g></g><circle class="on" cx="49" cy="49" r="4.5" fill="#25d366" stroke="#fff" stroke-width="2"/></svg></button>
+<div class="btw" id="btw" role="dialog" aria-label="Chat assistant" aria-hidden="true">
+<div class="bth"><div><b>Bright Assistant</b><small id="btsub"></small></div><button id="btx" aria-label="Close chat">×</button></div>
+<div class="btm" id="btm" aria-live="polite"></div>
+<div class="btq" id="btq"></div>
+<div class="bti"><input id="bti" type="text" maxlength="300" placeholder="Type your question..." aria-label="Type your question" autocomplete="off"><button id="bts" aria-label="Send">➤</button></div>
+</div>
 <div class="cur" id="cur"></div>
 
 <div class="ov" id="ov" aria-hidden="true"><div class="sh" role="dialog" aria-modal="true" aria-labelledby="mt">
@@ -305,6 +347,7 @@ h1,h2{text-wrap:balance}
 /* ===== EDIT HERE ===== */
 var WHATSAPP_URL="https://wa.me/message/YA7BCDI3QYUOO1";
 var EMAIL="brightagency369@gmail.com";
+var CHAT_API_URL=""; // optional: paste your Cloudflare Worker URL here to turn on real AI replies (see README)
 /* ===================== */
 var S=[
 {k:"ugc",t:"UGC Ads",i:"🎬",c:"var(--y)",s:"Creator-style ads that feel like a friend’s recommendation.",d:"We create creator-style advertising concepts and videos that feel natural, relatable and authentic, just like a recommendation from a friend.",g:["Creative video concepts","Attention-grabbing hooks","Product-focused storytelling","Ad-ready creative direction"],f:["E-commerce","Beauty","Lifestyle","Products","Startups"]},
@@ -357,6 +400,70 @@ if(matchMedia("(pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion:re
 var st=$("stack"),cur=$("cur");
 $("home").addEventListener("pointermove",function(e){var r=st.getBoundingClientRect();st.style.setProperty("--mx",((e.clientX-r.left)/r.width-.5)*2);st.style.setProperty("--my",((e.clientY-r.top)/r.height-.5)*2)});
 addEventListener("pointermove",function(e){cur.style.opacity=1;cur.style.transform="translate("+e.clientX+"px,"+e.clientY+"px)";cur.classList.toggle("big",!!e.target.closest("a,button"))})}
+/* hero chat demo: cycles through our services */
+(function(){
+if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+var sc=[["Do you manage social media pages?","Yes! We plan content, posts and reels."],["Can you build a website for my shop?","Yes! Mobile-friendly, with WhatsApp and email buttons."],["Do you run ads too?","Yes! UGC ads, banners and social media campaigns."],["Can you set up a chat agent?","Yes! For WhatsApp, Instagram and websites."]];
+var cu=$("cu"),ct=$("ct"),cs=$("cs");
+function show(el,d){el.style.display="none";void el.offsetWidth;el.style.display=d||""}
+function play(i){cs.style.display="none";ct.style.display="none";cu.textContent=sc[i][0];show(cu);
+setTimeout(function(){ct.style.display="flex"},900);
+setTimeout(function(){ct.style.display="none";cs.textContent=sc[i][1];show(cs)},2400);
+setTimeout(function(){play((i+1)%sc.length)},6400)}
+setTimeout(function(){play(1)},3500);
+})();
+/* ===== chat assistant ===== */
+(function(){
+var L=$("btl"),W=$("btw"),M=$("btm"),Q=$("btq"),I=$("bti"),hist=[],started=false,busy=false;
+$("btsub").textContent=CHAT_API_URL?"AI assistant":"Virtual assistant";
+var K=[
+[/\b(hi+|hello|hey|namaste|hola)\b/,"Hi! 👋 Ask me about our services, how we work, or how to reach us.",0],
+[/(thank|shukriya|dhanyavad)/,"You’re welcome! 😊 Anything else I can help with?",0],
+[/(price|pricing|cost|charge|fee|rate|budget|quote|how much|kitna|kitne paise|paisa|daam|kharch)/,"Pricing depends on your business, goals and the services you need, so we prepare a custom quote. Message us on WhatsApp or email with a few details and we’ll guide you.",1],
+[/(how long|timeline|delivery|deliver|turnaround|kitne din)/,"Timelines depend on the service and your requirements. Tell our team what you need on WhatsApp or email and they’ll share a clear plan.",1],
+[/(chat ?bot|chat agent|automation|\bbot\b|auto ?repl)/,"Chat agents: automated chat for WhatsApp, Instagram and your website that answers common questions and captures leads.",0],
+[/(contact|reach|email|mail|whatsapp|call|phone|number|human|talk to|speak to)/,"You can reach our team directly on WhatsApp or by email. We’ll reply with a clear plan.",1],
+[/(ugc|creator|video ad)/,"UGC ads: creator-style video concepts that feel natural and relatable, like a recommendation from a friend. You get video concepts, attention-grabbing hooks, product-focused storytelling and ad-ready creative direction.",0],
+[/(banner|ad creative|creatives|poster)/,"Banner ads: eye-catching creatives for Instagram, Facebook, YouTube and Google display ads, designed to match your brand.",0],
+[/(social media manag|content plan|posting|manage my|handle my)/,"Social media management: we plan your content, create posts, reels and stories, write captions and support page growth, so your pages look active and professional.",0],
+[/(website|web site|web ?page|landing page|site banana)/,"Website building: we design modern, mobile-friendly websites that present your business clearly and make it easy for customers to contact you, with WhatsApp and email buttons. We also guide you on hosting and launch.",0],
+[/(growth|funnel|strategy|sales|grow my)/,"Business growth help: guidance on your offer, pricing, sales funnel, customer journey and content strategy.",0],
+[/(campaign|\bads?\b|advertis|facebook|google ads|meta)/,"Social media ad campaigns: we plan, launch, manage and improve ads on major platforms, with audience targeting guidance and performance monitoring.",0],
+[/(process|how do you work|how it works|does it work|steps|how to start|kaise)/,"Our process is simple:\n1. Talk: we understand your business and goals\n2. Plan: we create the creative direction and strategy\n3. Launch: we bring your ads and creatives to life\n4. Improve: we track performance and keep improving",0],
+[/(service|what do you do|what.*offer|kya karte)/,"We offer:\n1. UGC ads\n2. Banner ads\n3. Social media ad campaigns\n4. Chat agents\n5. Business growth help\n6. Social media management\n7. Website building\nAsk about any of them for details.",0]
+];
+function faq(t){t=t.toLowerCase();for(var i=0;i<K.length;i++)if(K[i][0].test(t))return K[i];return[0,"I’m not fully sure about that, but our team can help. Tap WhatsApp or Email and we’ll get back to you.",1]}
+function msg(t,c){var d=document.createElement("div");d.className="bm "+c;d.textContent=t;M.appendChild(d);M.scrollTop=M.scrollHeight;return d}
+function acts(){var d=document.createElement("div");d.className="bta";var w=document.createElement("a");w.href=WHATSAPP_URL;w.target="_blank";w.rel="noopener";w.textContent="💬 WhatsApp";var e=document.createElement("a");setMail(e,"Enquiry About Bright Ads & Marketing");e.textContent="✉️ Email";d.appendChild(w);d.appendChild(e);M.appendChild(d);M.scrollTop=M.scrollHeight}
+function typing(){var d=document.createElement("div");d.className="bm bot ty";d.innerHTML="<i></i><i></i><i></i>";M.appendChild(d);M.scrollTop=M.scrollHeight;return d}
+function reply(t){busy=true;var ty=typing(),f=faq(t);
+ function done(x,a){ty.remove();msg(x,"bot");if(a)acts();hist.push({role:"assistant",content:x});busy=false}
+ if(CHAT_API_URL){fetch(CHAT_API_URL,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({messages:hist.slice(-10)})}).then(function(r){return r.json()}).then(function(d){if(!d.reply)throw 0;done(d.reply,/whatsapp|e-?mail/i.test(d.reply))}).catch(function(){done(f[1],f[2])})}
+ else setTimeout(function(){done(f[1],f[2])},700)}
+function send(t){t=(t||I.value).trim();if(!t||busy)return;I.value="";Q.style.display="none";t=t.slice(0,300);msg(t,"me");hist.push({role:"user",content:t});reply(t)}
+function placeW(){var r=L.getBoundingClientRect(),vw=innerWidth,vh=innerHeight,ww=Math.min(380,vw-24);
+W.style.width=ww+"px";W.style.left=Math.max(12,Math.min(r.left,vw-ww-12))+"px";
+if(r.top>vh/2){W.style.top="auto";W.style.bottom=(vh-r.top+10)+"px";W.style.height=Math.max(260,Math.min(540,r.top-22))+"px"}
+else{W.style.bottom="auto";W.style.top=(r.bottom+10)+"px";W.style.height=Math.max(260,Math.min(540,vh-r.bottom-22))+"px"}}
+function chips(){["What services do you offer?","How does it work?","Pricing","Build a website","Talk to a human"].forEach(function(x){var b=document.createElement("button");b.textContent=x;b.onclick=function(){send(x)};Q.appendChild(b)})}
+function toggle(o){W.classList.toggle("open",o);W.setAttribute("aria-hidden",!o);if(o)placeW();L.setAttribute("aria-expanded",o);
+ if(o&&!started){started=true;msg("Hi! 👋 I’m the Bright assistant. Ask me about our services, how we work, or how to reach us.","bot");chips()}
+ if(o&&matchMedia("(pointer:fine)").matches)I.focus()}
+var drag=null,moved=false;
+function clampPos(){if(!L.style.left)return;var r=L.getBoundingClientRect();L.style.left=Math.max(6,Math.min(r.left,innerWidth-r.width-6))+"px";L.style.top=Math.max(6,Math.min(r.top,innerHeight-r.height-6))+"px"}
+L.addEventListener("pointerdown",function(e){var r=L.getBoundingClientRect();drag={x:e.clientX,y:e.clientY,l:r.left,t:r.top,on:false};try{L.setPointerCapture(e.pointerId)}catch(x){}});
+L.addEventListener("pointermove",function(e){if(!drag)return;var dx=e.clientX-drag.x,dy=e.clientY-drag.y;
+ if(!drag.on&&Math.hypot(dx,dy)>6){drag.on=true;L.classList.add("drag");L.style.bottom="auto"}
+ if(drag.on){L.style.left=Math.max(6,Math.min(drag.l+dx,innerWidth-L.offsetWidth-6))+"px";L.style.top=Math.max(6,Math.min(drag.t+dy,innerHeight-L.offsetHeight-6))+"px";if(W.classList.contains("open"))placeW()}});
+function endDrag(){if(!drag)return;if(drag.on){moved=true;setTimeout(function(){moved=false},80);L.classList.remove("drag");try{localStorage.setItem("ba-chat",JSON.stringify([L.style.left,L.style.top]))}catch(x){}}drag=null}
+L.addEventListener("pointerup",endDrag);L.addEventListener("pointercancel",endDrag);
+L.addEventListener("click",function(){if(moved)return;toggle(!W.classList.contains("open"))});
+try{var sp=JSON.parse(localStorage.getItem("ba-chat")||"null");if(sp){L.style.bottom="auto";L.style.left=sp[0];L.style.top=sp[1];clampPos()}}catch(x){}
+addEventListener("resize",function(){clampPos();if(W.classList.contains("open"))placeW()});
+$("btx").onclick=function(){toggle(false)};$("bts").onclick=function(){send()};
+I.addEventListener("keydown",function(e){if(e.key==="Enter")send()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&W.classList.contains("open"))toggle(false)});
+})();
 </script>
 </body>
 </html>
