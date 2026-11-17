@@ -256,16 +256,34 @@ h1,h2{text-wrap:balance}
 @keyframes fade{from{opacity:0}}@keyframes fadeo{to{opacity:0}}
 @keyframes li{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}.sh li{opacity:1}h1 em{background-size:100% .3em}.steps::before{transform:none}}
+
+/* pricing */
+.pw{overflow-x:auto;border-radius:24px;border:1px solid var(--gb);background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.ptab{width:100%;border-collapse:collapse;min-width:560px;font-size:16px}
+.ptab th,.ptab td{padding:16px 18px;text-align:left;border-bottom:1px solid var(--line)}
+.ptab th{font:800 14px "Bricolage Grotesque",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ptab tr:last-child td{border-bottom:0}
+.ptab td:first-child{font-weight:700}
+.ptab td b{font:800 20px "Bricolage Grotesque",sans-serif}
+.ptab tbody tr{cursor:pointer;transition:background .2s}.ptab tbody tr:hover{background:rgba(255,201,60,.18)}
+.pnote{color:var(--muted);font-size:14px;margin-top:16px;max-width:70ch}
+.pt{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:6px}
+.pt button{padding:10px 6px;border-radius:16px;border:1px solid var(--gb);background:var(--glass);color:var(--ink);font:700 14px "DM Sans",sans-serif;cursor:pointer;line-height:1.25}
+.pt button b{display:block;font:800 22px "Bricolage Grotesque",sans-serif}
+.pt button.on{background:var(--y);border-color:var(--y);color:#1c1a3a}
+.pn{color:var(--muted);font-size:14px;margin-top:12px}
+.sh h6{font:700 13px "DM Sans";letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px}
+@media(max-width:480px){.pt button b{font-size:19px}}
 </style>
 </head>
 <body>
 <div class="amb" aria-hidden="true"><i></i><i></i><i></i></div><div class="prog" id="prog"></div>
 <header class="nav" id="nav"><div class="w">
 <a class="logo" href="#home" aria-label="Bright Ads & Marketing home"><svg viewBox="0 0 46 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="10" fill="#ffc93c"/><circle cx="23" cy="10.5" r="10" fill="#ff5c7a"/><circle cx="35.5" cy="10.5" r="10" fill="#2ec4b6"/></svg><span>Bright Ads &amp; Marketing</span></a>
-<ul class="links" id="links"><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><span class="ind" id="ind"></span></ul>
+<ul class="links" id="links"><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li><span class="ind" id="ind"></span></ul>
 <div class="tools"><button class="ib" id="th" aria-label="Toggle light and dark theme">◐</button><a class="btn pri talk" href="#contact">Let’s Talk</a><button class="ib burger" id="bg" aria-label="Open menu" aria-expanded="false">☰</button></div>
 </div></header>
-<nav class="menu" id="menu" aria-label="Mobile"><a href="#home">Home</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn pri" href="#contact">Let’s Talk</a></nav>
+<nav class="menu" id="menu" aria-label="Mobile"><a href="#home">Home</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#process">Our Process</a><a href="#about">About</a><a href="#contact">Contact</a><a class="btn pri" href="#contact">Let’s Talk</a></nav>
 
 <main>
 <div class="hero" id="home">
@@ -291,6 +309,14 @@ h1,h2{text-wrap:balance}
 <h2 class="rv">Creative solutions. Real business potential.</h2>
 <p class="sub rv">Everything your brand needs to attract attention, connect with customers and move forward.</p>
 <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="pricing"><div class="w">
+<p class="eyebrow rv">Pricing</p>
+<h2 class="rv">Clear packages. No surprises.</h2>
+<p class="sub rv">Choose Basic, Standard or Premium for every service. Tap a row to see exactly what is included.</p>
+<div class="pw rv"><table class="ptab"><thead><tr><th>Service</th><th>Basic</th><th>Standard</th><th>Premium</th></tr></thead><tbody id="ptb"></tbody></table></div>
+<p class="pnote rv">Chat Agent prices are one-time setup fees. Monthly maintenance ($99 / $199 / $299) is charged separately. Advertising budgets are paid by the client directly to the ad platform.</p>
 </div></section>
 
 <section id="about"><div class="w ab">
@@ -322,7 +348,7 @@ h1,h2{text-wrap:balance}
 
 <footer><div class="w"><div class="fg">
 <div><a class="logo" href="#home"><svg viewBox="0 0 46 21" aria-hidden="true"><circle cx="10.5" cy="10.5" r="10" fill="#ffc93c"/><circle cx="23" cy="10.5" r="10" fill="#ff5c7a"/><circle cx="35.5" cy="10.5" r="10" fill="#2ec4b6"/></svg><span>Bright Ads &amp; Marketing</span></a><p class="d">A creative digital marketing agency for brands that want to be noticed and ready to grow.</p><div class="soc"><a href="https://www.instagram.com/bright_ad_marketing" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a><a href="https://x.com/Brightagency369" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h4l12 16h-4z"/><path d="M4 20l6.5-7M13.5 11L20 4"/></svg></a><a href="https://www.linkedin.com/company/bright-ads-marketing369/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="5" r="2"/><path d="M10 9h4v2c1-1.5 2.5-2.3 4.2-2.3 3 0 3.8 2 3.8 4.8V21h-4v-6.5c0-1.5-.5-2.5-1.8-2.5S14 13 14 14.5V21h-4z"/></svg></a><a href="https://youtube.com/@brightadsanmarketing" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a><a href="https://www.tiktok.com/@bright_ads_marketing" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3v11a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.3 2.4 2 4.1 4.5 4.3"/></svg></a></div></div>
-<div><h4>Navigate</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Navigate</h4><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#process">Our Process</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
 <div><h4>Services</h4><ul id="fsv"></ul></div>
 <div><h4>Contact</h4><ul><li><a class="js-mail" href="#contact">brightagency369@gmail.com</a></li><li><a class="js-wa" href="#contact">Chat on WhatsApp</a></li></ul></div>
 </div><p class="copy">© <span id="yr">2026</span> Bright Ads &amp; Marketing. All rights reserved.</p></div></footer>
@@ -339,7 +365,7 @@ h1,h2{text-wrap:balance}
 
 <div class="ov" id="ov" aria-hidden="true"><div class="sh" role="dialog" aria-modal="true" aria-labelledby="mt">
 <div class="top" id="mtop"><button class="x" id="mx" aria-label="Close">×</button><div class="ic" id="mi"></div><h3 id="mt"></h3></div>
-<div class="bd"><p id="md"></p><h5>What you get</h5><ul id="mg"></ul><h5>Great for</h5><div class="tags" id="mf"></div></div>
+<div class="bd"><p id="md"></p><h5>What you get</h5><ul id="mg"></ul><h5>Great for</h5><div class="tags" id="mf"></div><h5>Pricing</h5><div class="pt" id="pt"></div><div id="pb"></div><p class="pn" id="pn"></p></div>
 <div class="acts"><a class="act w js-wa" href="#contact">💬 Chat on WhatsApp</a><a class="act g" id="mm" target="_blank" rel="noopener" href="#contact">✉️ Email Us</a></div>
 </div></div>
 
@@ -371,12 +397,32 @@ document.querySelectorAll(".js-wa").forEach(function(a){a.href=WHATSAPP_URL;a.ta
 function setMail(a,sub){var m=matchMedia("(pointer:coarse)").matches,e=encodeURIComponent(sub);a.href=m?"mailto:"+EMAIL+"?subject="+e:"https://mail.google.com/mail/?view=cm&to="+EMAIL+"&su="+e;if(m)a.removeAttribute("target");else{a.target="_blank";a.rel="noopener"}}
 document.querySelectorAll(".js-mail").forEach(function(a){setMail(a,"Enquiry About Bright Ads & Marketing")});
 /* modal */
+
+/* ===== PRICING DATA (edit prices here) ===== */
+var P={
+growth:{t:[["149","Business growth audit|Business problem identification|Marketing and branding suggestions|Actionable growth recommendations|Final audit report|15 days one-to-one WhatsApp support|No calls in the Basic package"],["299","Complete business growth audit|Competitor analysis|Marketing strategy|Branding improvement plan|Offer and pricing suggestions|Customer acquisition strategy|Sales funnel recommendations|30 days one-to-one WhatsApp support"],["499","Complete business growth audit|Detailed competitor analysis|Complete marketing strategy|Brand positioning strategy|Offer and pricing strategy|Customer acquisition plan|Sales funnel strategy|Content and advertising strategy|90-day business growth roadmap|Weekly progress review|30 days one-to-one WhatsApp support"]]},
+smm:{n:"Prices are per month.",t:[["799","2 platforms only: Instagram + Facebook|Content creation and scheduling|12 content pieces per month|Monthly performance report"],["1,299","3 social media platforms|16 content pieces per month|4 reels per month|Static posts and carousels|Content creation and captions|Hashtag research|Content scheduling|Community management (comments and basic engagement), Monday to Friday|Monthly content strategy|Monthly performance report"],["1,799","4 social media platforms|24 content pieces per month|8 reels per month|Static posts and carousels|Professional content creation|Captions, hashtags and scheduling|Advanced content strategy|Community management, 7 days a week|Audience engagement|Monthly competitor analysis|Monthly performance report|Monthly strategy meeting on WhatsApp"]]},
+chat:{n:"Setup price is one-time. Monthly maintenance is charged separately. All plans include lifetime access. In the Basic plan, the client selects one platform: Instagram, WhatsApp or Website.",t:[["799","Website AI chatbot|FAQ automation|Lead collection|Business information|Human-like behaviour|Website integration|Initial testing","99","Chatbot monitoring|Minor bug fixes|Existing answer and information updates|Basic performance check|Technical support"],["1,299","Advanced AI chatbot|Website integration|WhatsApp integration|AI knowledge base|Lead qualification|Appointment booking|Human handover|Automated follow-ups|Conversation history|Initial testing and deployment","199","Bot monitoring and troubleshooting|Minor chatbot improvements|Knowledge-base updates|Performance checks|Technical support|Minor workflow adjustments"],["1,999","Advanced AI chatbot|Website integration|WhatsApp integration|Instagram DM integration|Advanced AI knowledge base|Smart lead qualification and scoring|Appointment booking and management|AI + human handover|Automated follow-ups and reminders|Conversation history|Custom automated workflows|Multilingual customer support|Customer enquiry management|Advanced testing and deployment|Complete system configuration","299","Continuous chatbot monitoring|Bug fixes and troubleshooting|AI knowledge-base updates|Existing workflow improvements|Performance and conversation analysis|Technical support|Minor automation adjustments|Follow-up system monitoring|Monthly performance report|Priority support"]]},
+social:{n:"Prices are per month. Ad budget is paid by the client directly to the platform. Example: $399/month plus $500 Meta Ads spend = $899 total monthly cost. Not included in any plan: client’s ad budget, UGC video production (Premium: professional UGC production), website or landing page development.",t:[["399","Facebook & Instagram Ads campaign setup|One advertising campaign|Campaign objective selection|Audience research and targeting|Ad copywriting|Up to 2 static ad creatives|Campaign launch and configuration|Performance monitoring|Basic campaign optimization|Monthly performance report"],["699","Facebook & Instagram Ads management|Up to 3 active advertising campaigns|Advanced audience research|Custom audience targeting|Retargeting campaign setup|Ad copywriting|Up to 5 static ad creatives|Up to 2 ad variations for testing|Campaign monitoring|Weekly campaign optimization|Conversion tracking guidance|Monthly performance report|Monthly strategy review"],["1,199","Facebook & Instagram Ads management|Up to 5 active advertising campaigns|Advanced audience research and segmentation|Custom and lookalike audience strategies|Advanced retargeting campaigns|Ad copywriting and creative strategy|Up to 10 static ad creatives|Up to 4 short video ad creatives (using client-provided footage)|A/B testing for audiences, creatives and ad copy|Conversion tracking setup guidance|Landing page and funnel recommendations|Continuous campaign monitoring|Regular campaign optimization|Weekly performance updates|Detailed monthly performance report|Monthly strategy meeting"]]},
+banner:{n:"Prices are per month.",t:[["149","One custom banner design concept per month|Up to 5 size variations of the same design|One selected platform: Instagram, Facebook, YouTube or Google Display|Brand colours, fonts and logo integration|Basic promotional headline and CTA text|Two rounds of revisions|High-quality PNG and JPG files|Final designs ready for advertising|Delivery within 3-5 business days after receiving all required materials"],["299","Two unique custom banner design concepts per month|Up to 5 size variations per concept (10 final designs total)|Instagram, Facebook, YouTube and Google Display formats|Custom brand-focused design|Promotional headlines and CTA text|Product and service-focused banner designs|Two rounds of revisions per concept|High-quality PNG and JPG exports|Platform-ready design files|Priority delivery within 3-5 business days after receiving the brief and assets"],["599","Three unique custom banner design concepts per month|Up to 8 size variations per concept (24 static designs total)|Google Display, YouTube, Facebook and Instagram|Up to 2 animated HTML5 banner creatives|Animated GIF versions where required|Advanced brand-focused creative design|Professional promotional copy and CTA suggestions|Product-focused and offer-focused banner designs|A/B testing creative variations|Up to 3 revision rounds per concept|Editable source files (where applicable)|High-quality PNG, JPG, GIF and HTML5 exports|Platform specification and file-size checks|Priority delivery and dedicated design support"]]},
+ugc:{n:"Prices are per month. Every UGC package includes free static image ads.",t:[["199","2 AI-generated UGC-style video ads per month|15-30 seconds per video|AI avatar / presenter|Scriptwriting and engaging hooks|AI voiceover|Professional video editing|Captions and subtitles|Background music|One revision per video|Vertical 9:16 format|FREE: 2 custom static image ads per month|FREE: Professional branded designs, headline and CTA, PNG/JPG formats"],["399","4 AI-generated UGC-style video ads per month|20-45 seconds per video|AI avatar / presenter selection|Professional scriptwriting|Multiple hook ideas for each video|AI voiceover|Professional video editing|Captions and subtitles|Background music and visual effects|Two revisions per video|Vertical 9:16 and additional platform-ready resizing|FREE: 4 custom static image ads per month|FREE: Brand-focused designs, headlines and CTA, PNG/JPG exports"],["699","8 AI-generated UGC-style video ads per month|30-60 seconds per video|Client selects preferred AI presenters from available options|Multiple AI presenter styles|Professional scriptwriting and storytelling|Multiple hooks and CTA variations|AI voiceovers|Advanced video editing and visual effects|Captions and subtitles|Background music|Two revisions per video|Vertical 9:16 and additional platform-ready formats|FREE: 8 custom static image ads per month|FREE: Brand-focused promotional designs, multiple creative angles, headlines and CTA, PNG/JPG exports"]]},
+web:{n:"One-time price.",t:[["299","One-page website|Up to 5 content sections|Mobile, tablet and desktop responsive design|Professional custom layout|About and Services sections|Contact form|WhatsApp contact button|Social media links|Basic SEO setup|2 revision rounds"],["699","Up to 5 professional website pages|Custom website design|Mobile, tablet and desktop responsive design|Home, About, Services, Portfolio and Contact pages|Professional website content writing|Contact and enquiry forms|WhatsApp integration|Google Maps integration|Social media integration|Basic on-page SEO for all pages|Image gallery or portfolio|Google Analytics setup|2 revision rounds|30 days post-launch technical support|Estimated delivery: 10-15 business days"],["1,299","Up to 10 website pages|Premium custom website design|Fully responsive design (mobile, tablet and desktop)|Advanced layouts and sections|Custom animations and interactions|Professional website content writing|Advanced contact and lead generation forms|WhatsApp integration|Booking and appointment integration|Blog / News section|Advanced portfolio and image gallery|Social media integration|Google Maps integration|Advanced on-page SEO|Google Analytics integration|Google Search Console setup|Website speed and image optimization|Basic website security setup|3 revision rounds|60 days post-launch support|Website handover and walkthrough"]]}
+};
+var TN=["Basic","Standard","Premium"];
+function pl(x){return x.split("|").map(function(f){return"<li>"+f+"</li>"}).join("")}
+$("ptb").innerHTML=["growth","smm","chat","social","banner","ugc","web"].map(function(k){var s=S.filter(function(x){return x.k===k})[0];return'<tr data-open="'+k+'"><td>'+s.i+" "+s.t+"</td>"+P[k].t.map(function(t){return"<td><b>$"+t[0]+"</b></td>"}).join("")+"</tr>"}).join("");
+function showTier(k,n){var t=P[k].t[n];
+ [].forEach.call($("pt").children,function(b,i){b.classList.toggle("on",i===n)});
+ $("pb").innerHTML=(P[k].t[n][2]?"<h6>Setup includes</h6>":"")+"<ul>"+pl(t[1])+"</ul>"+(t[2]?"<h6>Monthly maintenance: $"+t[2]+"</h6><ul>"+pl(t[3])+"</ul>":"")}
+function showPrice(k){var p=P[k];$("pt").innerHTML=p.t.map(function(t,i){return'<button type="button" data-t="'+i+'">'+TN[i]+"<b>$"+t[0]+"</b></button>"}).join("");
+ [].forEach.call($("pt").children,function(b,i){b.onclick=function(){showTier(k,i)}});
+ $("pn").textContent=p.n||"";showTier(k,0)}
 var ov=$("ov"),last=null;
 function openM(k){var s=S.filter(function(x){return x.k===k})[0];if(!s)return;last=document.activeElement;
 $("mtop").style.background=s.c;$("mi").textContent=s.i;$("mt").textContent=s.t;$("md").textContent=s.d;
 $("mg").innerHTML=s.g.map(function(x,i){return'<li style="animation-delay:'+(.15+i*.1)+'s">'+x+'</li>'}).join("");
 $("mf").innerHTML=s.f.map(function(x){return"<span>"+x+"</span>"}).join("");
-setMail($("mm"),"Enquiry About "+s.t);
+setMail($("mm"),"Enquiry About "+s.t);showPrice(k);
 ov.classList.remove("out");ov.classList.add("open");ov.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";$("mx").focus()}
 function closeM(){if(!ov.classList.contains("open"))return;ov.classList.add("out");setTimeout(function(){ov.classList.remove("open","out");ov.setAttribute("aria-hidden","true");document.body.style.overflow="";if(last)last.focus()},250)}
 document.addEventListener("click",function(e){var c=e.target.closest("[data-k],[data-open]");if(c&&!ov.contains(c)){e.preventDefault();openM(c.dataset.k||c.dataset.open)}if(e.target===ov)closeM()});
@@ -391,7 +437,7 @@ bg.onclick=function(){tm(!menu.classList.contains("open"))};menu.querySelectorAl
 var nav=$("nav"),ind=$("ind"),la=[].slice.call(document.querySelectorAll("#links a"));
 var pg=$("prog");addEventListener("scroll",function(){nav.classList.toggle("sc",scrollY>20);pg.style.width=(scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100)+"%"},{passive:true});
 function mark(id){la.forEach(function(a){var on=a.getAttribute("href")==="#"+id;a.classList.toggle("on",on);if(on){ind.style.left=a.offsetLeft+14+"px";ind.style.width=a.offsetWidth-28+"px"}})}
-var secs=["home","services","about","process","contact"].map($);
+var secs=["home","services","pricing","about","process","contact"].map($);
 if("IntersectionObserver" in window){var so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)mark(x.target.id)})},{rootMargin:"-45% 0px -50% 0px"});secs.forEach(function(s){so.observe(s)});
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});document.querySelectorAll(".rv").forEach(function(el){io.observe(el)})}
 else{document.querySelectorAll(".rv").forEach(function(el){el.classList.add("in")})}
@@ -419,7 +465,7 @@ $("btsub").textContent=CHAT_API_URL?"AI assistant":"Virtual assistant";
 var K=[
 [/\b(hi+|hello|hey|namaste|hola)\b/,"Hi! 👋 Ask me about our services, how we work, or how to reach us.",0],
 [/(thank|shukriya|dhanyavad)/,"You’re welcome! 😊 Anything else I can help with?",0],
-[/(price|pricing|cost|charge|fee|rate|budget|quote|how much|kitna|kitne paise|paisa|daam|kharch)/,"Pricing depends on your business, goals and the services you need, so we prepare a custom quote. Message us on WhatsApp or email with a few details and we’ll guide you.",1],
+[/(price|pricing|cost|charge|fee|rate|budget|quote|how much|kitna|kitne paise|paisa|daam|kharch)/,"Our packages come in Basic, Standard and Premium. Starting prices:\nBusiness Growth Help: $149\nSocial Media Management: $799/mo\nChat Agents: $799 setup + $99/mo\nSocial Media Ad Campaign: $399/mo\nBanner Ads: $149/mo\nUGC Video Ads: $199/mo\nWebsite: $299\nAd budgets are paid directly to the ad platform. Tap a service card to see every package, or message us for a quote.",1],
 [/(how long|timeline|delivery|deliver|turnaround|kitne din)/,"Timelines depend on the service and your requirements. Tell our team what you need on WhatsApp or email and they’ll share a clear plan.",1],
 [/(chat ?bot|chat agent|automation|\bbot\b|auto ?repl)/,"Chat agents: automated chat for WhatsApp, Instagram and your website that answers common questions and captures leads.",0],
 [/(contact|reach|email|mail|whatsapp|call|phone|number|human|talk to|speak to)/,"You can reach our team directly on WhatsApp or by email. We’ll reply with a clear plan.",1],
